@@ -7,18 +7,42 @@
   <title>Seasons</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    .winter {
-      list-style-image: url(icons_seasons/winter_16.png);
-
+    .ol {
+      list-style-type: none;
     }
 
+    .ul {
+      list-style-type: none;
+    }
+
+    .ul_list {
+      list-style-image: url(icons_list/arrow_16.png);
+    }
+
+    .winter {
+      list-style-image: url(icons_seasons/winter_16.png);
+    }
+
+    .spring {
+      list-style-image: url(icons_seasons/spring_16.png);
+    }
+
+    .summer {
+      list-style-image: url(icons_seasons/summer_16.png);
+    }
+
+    .autumn {
+      list-style-image: url(icons_seasons/autumn_16.png);
+    }
   </style>
 </head>
 
 <body>
-  <div>
-    <h3>Seasons</h3>
-    <ul>
+  <p><a href="index.html">Back</a></p>
+  <h3>Seasons</h3>
+  <div>    
+    <ul class="ul_list">
+
       <li>Winter
         <ol class="winter">
           <li>December</li>
@@ -27,28 +51,30 @@
         </ol>
       </li>
 
-      <li>Spring 
-        <ul>
+      <li>Spring
+        <ol class="spring">
           <li>March</li>
           <li>April</li>
           <li>May</li>
-        </ul>
+        </ol>
       </li>
 
       <li>Summer
-      <ul>
-        <li>June</li>
-        <li>Jliy</li>
-        <li>August</li>
-      </ul>
-    </li>
+        <ol class="summer">
+          <li>June</li>
+          <li>Jliy</li>
+          <li>August</li>
+        </ol>
+      </li>
+
       <li>Autumn
-      <ul>
-        <li>September</li>
-        <li>October</li>
-        <li>November</li>
-      </ul>
-    </li>
+        <ol class="autumn">
+          <li>September</li>
+          <li>October</li>
+          <li>November</li>
+        </ol>
+      </li>
+
     </ul>
   </div>
 
