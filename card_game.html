@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CardGame</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .body_view {
+      background-color: #f6f6f6;
+      padding: 30px 30px;
+    }
+
+    span {
+      background-color: #e0e0e0;
+      font-size: xx-large;
+      padding: 6px;
+    }
+
+    .paint_map {
+      color: #7e1010;
+    }
+  </style>
 </head>
+
 <body>
-  <p><a href="index.html">Back</a></p>
-<p>Player 1:</p>
+  <div class="body_view">
+    <p><a href="index.html">Back</a></p>
+    <p>Player 1:</p>
 
-  <span>2♣ 9♥ 6♥ A♦ Q♠ J♣</span>
+    <span>2♣</span> <span class="paint_map">9♥</span> <span class="paint_map">6♥</span> <span
+      class="paint_map">A♦</span> <span>Q♠</span> <span>J♣</span>
 
-<p>Player 2:</p>
+    <p>Player 2:</p>
 
-  <span>3♥ A♣ 10♣ K♦ 8♠ 3♥</span>
+    <span class="paint_map">3♥</span> <span>A♣</span> <span>10♣</span> <span class="paint_map">K♦</span> <span>8♠</span>
+    <span class="paint_map">3♥</span>
+  </div>
 </body>
+
 </html>
