@@ -13,20 +13,22 @@
     }
 
     .body_view {
+      display: block;
       background-color: #808080;
-      color: white;   
-      padding: 20px;
+      color: white;
       font-size: 20px;
       text-align: center;
     }
+
+    .color_view {
+      background-color: #808080;
+    }
+
     .text_view {
       padding: 32px;
     }
-    div:hover {
-      background-color: #5e5e5e;
-    }
 
-   span:hover {
+    .text_view:hover {
       background-color: #5e5e5e;
     }
   </style>
@@ -34,24 +36,23 @@
 
 <body>
   <div class="body_view">
-    <div>
-  <div class="text_view">
-    <span>EDIT</span>
+
+    <div class="text_view">
+      <span>EDIT</span>
+    </div>
+    <div class="text_view">
+      <span>FAVORITES</span>
+    </div>
+    <div class="text_view">
+      <span>HISTORY</span>
+    </div>
+    <div class="text_view">
+      <span>SECURITY</span>
+    </div>
+    <div class="text_view">
+      <span>SETTIGS</span>
+    </div>
   </div>
-</div>
-  <div class="text_view">
-    <span>FAVORITES</span>    
-  </div>
-  <div class="text_view">
-    <span>HISTORY</span>   
-  </div>
-  <div class="text_view">
-    <span>SECURITY</span>
-  </div>
-  <div class="text_view">
-    <span>SETTIGS</span>    
-  </div>
-</div>
 
 </body>
 
