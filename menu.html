@@ -7,65 +7,50 @@
   <title>Menu</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      max-width: 300px;
-      margin: 0 auto;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
     }
 
-    .body_view {
-      display: block;
-      background-color: #808080;
+    nav {
+      width: 400px;
+      color: grey;
+    }
+
+    li:hover {
+      background-color: grey;
+
+    }
+
+    a {
+      text-transform: uppercase;
       color: white;
-      font-size: 20px;
-      text-align: center;
+      text-decoration: none;
+
     }
 
-    .color_view {
-      background-color: #808080;
+    .edit {
+      background: url(icons/edit.png) 0px -5px/ 64px 64px no-repeat;
     }
 
-    .text_view {
-      text-align: right;
-    }
-
-    .text_view:hover {
-      background-color: #5e5e5e;
-    }
-
-    img {
-      display: flex;
-      justify-content: space-around;
-      text-align: left;
-     
+    li {
+      padding: 20px 20px 20px 60px;
     }
   </style>
 </head>
 
 <body>
-  <div class="body_view">
+  <nav>
+    <ul>
+      <li class="edit"><a href="#"></a>EDIT</li>
+      <li class="fav"><a href="#"></a>FAVORITES</li>
+      <li class="history"><a href="#"></a>HISTORY</li>
+      <li class="sec"><a href="#"></a>SECURITY</li>
+      <li class="set"><a href="#"></a>SETTIGS</li>
+    </ul>
+  </nav>
 
-    <div>
-    
-      <span>EDIT</span>
-    </div>
-
-    <div>
-      <img src="icons/favorites.png" width="64" alt="">
-      <span>FAVORITES</span>
-    </div>
-    <div>
-      <img src="icons/history.png" width="64" alt="">
-      <span>HISTORY</span>
-    </div>
-    <div>
-      <img src="icons/security.png" width="64" alt="">
-      <span>SECURITY</span>
-    </div>
-    <div>
-      <img src="icons/settings.png" width="64" alt="">
-      <span>SETTIGS</span>
-    </div>
-  </div>
 
 </body>
 
