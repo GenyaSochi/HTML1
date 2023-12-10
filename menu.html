@@ -8,36 +8,47 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      padding: 0;
-      margin: 0;
+      max-width: 280px;
+      margin: 0 auto;
     }
+
     ul {
       margin: 0;
       padding: 0;
-      list-style: none;   
+      list-style: none;
     }
 
     nav {
-      width: 400px;
-      color: grey;
+      background-color: #808080;
+      color: white;
+    }
+
+    li {
+      padding: 20px 20px 40px 80px;
     }
 
     li:hover {
-      background-color: grey;
-    }
-
-    a {
-      text-transform: uppercase;
-      color: white;
-      text-decoration: none;
+      background-color: #5e5e5e;
     }
 
     .edit {
       background: url(icons/edit.png) 0px -5px/ 64px 64px no-repeat;
     }
 
-    li {
-      padding: 20px 20px 20px 60px;
+    .fav {
+      background: url(icons/favorites.png) 0px -5px/ 64px 64px no-repeat;
+    }
+
+    .history {
+      background: url(icons/history.png) 0px -5px/ 64px 64px no-repeat;
+    }
+
+    .sec {
+      background: url(icons/security.png) 0px -5px/ 64px 64px no-repeat;
+    }
+
+    .set {
+      background: url(icons/settings.png) 0px -5px/ 64px 64px no-repeat;
     }
   </style>
 </head>
@@ -52,8 +63,5 @@
       <li class="set"><a href="#"></a>SETTIGS</li>
     </ul>
   </nav>
-
-
 </body>
-
 </html>
