@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .layout {
+      text-transform: uppercase;
+      margin: 50px auto;
+      max-width: 800px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .layout header {
+      background-color: #7e3258;
+      padding: 20px 40px;
+    }
+
+    .layout nav,
+    .layout footer {
+      background-color: #5d1437;
+      padding: 10px 40px;
+      margin: 10px 0;
+
+    }
+
+    .layout aside,
+    .layout main {
+      background-color: #a25b80;
+      padding: 20px 40px;
+    }
+
+    .layout section {
+      background-color: #c992af;
+      padding: 5px 40px 60px;
+      margin: 10px 0;
+    }
+
+    .layout .flex {
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .layout main {
+      width: 418px;
+    }
+
+    .layout aside {
+      margin-bottom: 10px;
+    }
+
+    .layout .vertical {
+      writing-mode: vertical-lr;
+      text-orientation: upright;
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Back</a></p>
+  <div class="layout">
+    <header>
+      header
+    </header>
+    <nav>
+      menu
+    </nav>
+    <div class="flex">
+      <div>
+        <aside>
+          aside 1
+        </aside>
+        <aside>
+          aside 2
+        </aside>
+      </div>
+      <main>
+        main content
+        <section>
+          section 1
+        </section>
+        <section>
+          section 2
+        </section>
+      </main>
+      <aside class="vertical">
+        aside 3
+      </aside>
+    </div>
+    <footer>
+      footer
+    </footer>
+  </div>
+
+
+</body>
+
+</html>
