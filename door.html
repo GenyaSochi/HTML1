@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Door</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-direction: row;
+    }
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: #752b61;
+    animation: open 3s infinite;
+
+  }
+  @keyframes open {
+    from {
+      transform: perspective(0);
+    }
+    to {
+      transform: perspective(90deg);
+    }
+  }
+    
+
+  </style>
+</head>
+
+<body>
+ <div></div>
+ <div></div>
+</body>
+
+</html>
