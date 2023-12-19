@@ -24,32 +24,33 @@
     animation: open 3s infinite;
   }
  
-  p {
+  .hello {
     text-transform: uppercase;
     font-size: 24px;
     position: absolute;    
   }
 
   .doorLeft, .doorRight {
-    transform: perspective(200px) rotateZ(0deg);
+    transform: perspective(220px) rotateZ(0deg);
     transition: all 2s ease;
   }
 
   .doorLeft:hover, .doorRight:hover ~ .doorLeft {
-     transform: perspective(200px) rotateY(60deg);
+     transform: perspective(220px) rotateY(80deg);
  }
 
  .doorRight:hover, .doorLeft:hover ~ .doorRight {
-    transform: perspective(200px) rotateY(-60deg);
+    transform: perspective(200px) rotateY(-80deg);
 }
   </style>
 </head>
 
 <body>
   <p><a href="index.html">Back</a></p>
-  <p>hello</p>
+  <p class="hello">hello</p>
  <div class="doorLeft"></div>
  <div class="doorRight"></div>
 </body>
+
 
 </html>
