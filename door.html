@@ -18,34 +18,30 @@
     }
 
   div {
-    width: 100px;
+    width: 140px;
     height: 100px;
     background-color: #752b61;
     animation: open 3s infinite;
-
   }
  
   p {
     text-transform: uppercase;
-    font-size: 20px;
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    z-index: 0;   
+    font-size: 24px;
+    position: absolute;    
   }
+
   .doorLeft, .doorRight {
     transform: perspective(200px) rotateZ(0deg);
     transition: all 2s ease;
   }
+
   .doorLeft:hover, .doorRight:hover ~ .doorLeft {
      transform: perspective(200px) rotateY(60deg);
  }
+ 
  .doorRight:hover, .doorLeft:hover ~ .doorRight {
     transform: perspective(200px) rotateY(-60deg);
 }
-
-    
-
   </style>
 </head>
 
