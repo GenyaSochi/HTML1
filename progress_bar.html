@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress_bar</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .div_view {
+      width: 400px;
+      height: 80px;
+      background-color: white;
+      border: 4px solid #e29330;
+      position: absolute;
+    }
+
+    .bar {
+      width: 80px;
+      height: 80px;
+      background-color: #e29330;
+      position: relative;
+      animation: move 2s infinite;
+    }
+
+    @keyframes move {
+      form {
+        transform: translate(0);
+      }
+
+      to {
+        transform: translate(322px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Back</a></p>
+  <div class="div_view">
+    <div class="bar"></div>
+  </div>
+</body>
+
+</html>
