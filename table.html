@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,150 +8,170 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      max-width: 500px;
-      margin: 0 auto;      
+      max-width: 800px;
+      margin: 10px auto;
     }
+
     table {
       border-collapse: collapse;
       border-radius: 10px;
       overflow: hidden;
     }
+
     .view_td1 {
       background-color: #7887ab;
-      width: 114px;
-      padding: 10px 10px 30px 10px;
+      width: 180px;
+      height: 60px;
+      padding: 30px 10px;
       text-align: center;
-      
-      color: white;        
+      color: white;
     }
-    
+
     .view_td2 {
       background-color: #4f628e;
-      padding: 10px 10px 5px 10px;
-      text-align: center;
-      color: white;        
+      width: 110px;
+      padding: 5px 20px 0 20px;
+      color: white;
     }
-    
+
     .view_td3 {
       background-color: #162955;
-      padding: 10px 10px 5px 10px;
+      width: 110px;
+      padding: 5px 20px 0 20px;
       text-align: center;
-      color: white;        
+      color: white;
     }
-    
+
     .view_td4 {
       background-color: #162955;
-      padding: 10px 10px 5px 10px;
+      width: 110px;
+      padding: 5px 20px 0 20px;
       text-align: center;
-      color: white;        
+      color: white;
     }
-    
+
     .view_td5 {
       background-color: #061539;
-      padding: 10px 10px 5px 10px;
+      width: 110px;
+      padding: 5px 20px 0 20px;
       text-align: center;
-      color: white;        
+      color: white;
     }
-   
-    span {
+
+    .view_span {
       font-size: 26px;
+      text-align: bottom;
     }
 
     td {
       padding: 10px;
-    }
-    .td_view1 {
       text-align: center;
+    }
+
+    .td1 {
       background-color: #dbdbdb;
     }
-    .td_view2 {
-      text-align: center;
+
+    .td2 {
       background-color: #ececec;
     }
-    .td_view3 {
-      text-align: center;
+
+    .td3 {
       background-color: #f3f3f3;
     }
-    .td_view4 {
+
+    th {
       text-align: left;
+      padding: 16px;
+      font-weight: normal;
     }
+
     .button {
       text-transform: uppercase;
       text-align: center;
-      border: 1px solid black;
+      border: 1px solid #bfbfbf;
       background-color: #ececec;
       padding: 10px;
       display: block;
       text-decoration: none;
       color: black;
     }
-    .button:hover {
-      background-color: #f3f3f3;
-    }
- 
 
+    .button:hover {
+      background-color: #dbdbdb;
+    }
+
+    .text {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; 
+    }
   </style>
 </head>
+
 <body>
+  <p><a href="index.html">Back</a></p>
   <table class="iksweb">
     <tbody>
       <tr>
-        <td class="view_td1">Choors your plan</td>
-        <td class="view_td2"><span>$10</span><br>per month</td>
-        <td class="view_td3"><span>$30</span><br>per month</td>
-        <td class="view_td4"><span>$59</span><br>per month</td>
-        <td class="view_td5"><span>$99</span><br>per month</td>
+        <th class="view_td1">Choors your plan</th>
+        <td class="view_td2"><span class="text">starter</span><span class="view_span">$10</span><br>per month</td>
+        <td class="view_td3"><span class="text">econom</span><span class="view_span">$30</span><br>per month</td>
+        <td class="view_td4"><span class="text">standart</span><span class="view_span">$59</span><br>per month</td>
+        <td class="view_td5"><span class="text">professional</span><span class="view_span">$99</span><br>per month</td>
       </tr>
       <tr>
-        <td class="td_view1">Amount of space</td>
-        <td class="td_view2">20GB</td>
-        <td class="td_view1">40GB</td>
-        <td class="td_view2">110GB</td>
-        <td class="td_view1">Unlimeted</td>
+        <th class="td1">Amount of space</th>
+
+        <td class="td2">20GB</td>
+        <td class="td1">40GB</td>
+        <td class="td2">110GB</td>
+        <td class="td1">Unlimeted</td>
       </tr>
       <tr>
-        <td class="td_view2">Bandwidth per month</td>
-        <td class="td_view3">120GB</td>
-        <td class="td_view2">240GB</td>
-        <td class="td_view3">610GB</td>
-        <td class="td_view2">1300GB</td>
+        <th class="td2">Bandwidth per month</th>
+        <td class="td3">120GB</td>
+        <td class="td2">240GB</td>
+        <td class="td3">610GB</td>
+        <td class="td2">1300GB</td>
       </tr>
       <tr>
-        <td class="td_view1">Email accounts</td>
-        <td class="td_view2">1</td>
-        <td class="td_view1">15</td>
-        <td class="td_view2">60</td>
-        <td class="td_view1">Unlimeted</td>
+        <th class="td1">Email accounts</th>
+        <td class="td2">1</td>
+        <td class="td1">15</td>
+        <td class="td2">60</td>
+        <td class="td1">Unlimeted</td>
       </tr>
       <tr>
-        <td class="td_view2">MySQL databases</td>
-        <td class="td_view2">1</td>
-        <td class="td_view1">15</td>
-        <td class="td_view2">60</td>
-        <td class="td_view1">Unlimeted</td>
+        <th class="td2">MySQL databases</th>
+        <td class="td3">1</td>
+        <td class="td2">15</td>
+        <td class="td3">60</td>
+        <td class="td2">Unlimeted</td>
       </tr>
       <tr>
-        <td class="td_view1">25h support</td>
-        <td class="td_view2">No</td>
-        <td class="td_view1">Yes</td>
-        <td class="td_view2">Yes</td>
-        <td class="td_view1">Yes</td>
+        <th class="td1">25h support</th>
+        <td class="td2">No</td>
+        <td class="td1">Yes</td>
+        <td class="td2">Yes</td>
+        <td class="td1">Yes</td>
       </tr>
       <tr>
-        <td class="td_view2">Support tickets per month</td>
-        <td class="td_view1">2</td>
-        <td class="td_view2">6</td>
-        <td class="td_view1">14</td>
-        <td class="td_view2">20</td>
+        <th class="td2">Support tickets per month</th>
+        <td class="td3">2</td>
+        <td class="td2">6</td>
+        <td class="td3">14</td>
+        <td class="td2">20</td>
       </tr>
       <tr>
-        <td class="td_view1"></td>
-        <td class="td_view2"><a class="button" href="#">start</a></td>
-        <td class="td_view3"><a class="button" href="#">start</a></td>
-        <td class="td_view2"><a class="button" href="#">start</a></td>
-        <td class="td_view3"><a class="button" href="#">start</a></td>
+        <td class="td1"></td>
+        <td class="td2"><a class="button" href="#">start</a></td>
+        <td class="td1"><a class="button" href="#">start</a></td>
+        <td class="td2"><a class="button" href="#">start</a></td>
+        <td class="td1"><a class="button" href="#">start</a></td>
       </tr>
     </tbody>
   </table>
 </body>
+
 </html>
