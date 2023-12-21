@@ -11,49 +11,72 @@
       max-width: 600px;
       margin: 0 auto;
     }
-
-    span {
-      text-transform: uppercase;
+    .heading {
+      text-transform: uppercase;    
     }
-
+    .span_view {
+      font-size: 28px;
+      vertical-align: top;     
+      caption-side: top;
+      padding: 10px ;      
+    }
     tbody {
       width: 50px;
-      height: 80px;
-      border: 2px solid #b5b5b5;
+      height: 80px;         
       text-align: center;
-
+    }  
+    p {
+      font-weight: bold;
+      font-size: 10px;    
     }
+    button {
+      text-transform: uppercase;
+      background-color: #ab3c59;
+      border: 1px solid #ab3c59;
+      color: white;
+      padding: 6px 20px;
+      border-radius: 6px;
+    }
+    .hr1 {
+      background-color: #ab3c59;
+    }
+    .text_view {
+      opacity: 0.3;
+      font-size: 14px;
+    }
+    .body_view {
+      border: 2px solid #b5b5b5;
+      border-radius: 10px;
+      padding: 2px;
+      margin: 20px;
+    }
+    
+
   </style>
 </head>
 
 <body>
-  <table>
+  <table class="body_view">
     <thead>
       <tr>
-        <th><span>enterprise</span></th>
-        <th><span>professional</span></th>
-        <th><span>standart</span></th>
-        <th><span>basic</span></th>
+        <th><span class="heading">enterprise<hr class="hr1"></span></th>       
       </tr>
+      
     </thead>
+    
     <tbody>
       <tr>
-        <td>$69<p>per month<br>10GB disk space<br>100GB monthlybandwidth<br>20 email accounts<br>
+        <td><p><span class="span_view">$69<br></span><span class="text_view">per month</span><br>10GB disk space<br>100GB monthlybandwidth<br>20 email accounts<br>
           Unlimited subdomens</p>
         </td>
-        <td>$29<p>per month<br>5GB disk space<br>60GB monthlybandwidth<br>10 email accounts<br>
-          Unlimited subdomens</p>
-        </td>
-        <td>$19<p>per month<br>3GB disk space<br>30GB monthlybandwidth<br>5 email accounts<br>
-          Unlimited subdomens</p>
-        </td>
-        <td>$9<p>per month<br>1GB disk space<br>10GB monthlybandwidth<br>2 email accounts<br>
-          Unlimited subdomens</p>
-        </td>
+      
       </tr>
 
     </tbody>
     <tfoot>
+      <tr>
+        <th><button>buy</button></th>
+      </tr>
 
     </tfoot>
   </table>
