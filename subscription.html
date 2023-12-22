@@ -8,76 +8,64 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      max-width: 600px;
-      margin: 0 auto;
+      max-width: 800px;
+      margin: 20px auto;
     }
-    .heading {
-      text-transform: uppercase;    
+    .p {
+      text-transform: uppercase; 
     }
-    .span_view {
-      font-size: 28px;
-      vertical-align: top;     
+    .p1 {
+      font-size: 32px;
+      margin: 5px;
     }
-    tbody {
-      width: 50px;
-      height: 80px;         
-      text-align: center;
-    }  
-    p {
-      font-weight: bold;
-      font-size: 10px;    
+    .p2 {
+      opacity: 0.6;
+      margin: 5px;    
     }
-    button {
-      text-transform: uppercase;
-      background-color: #ab3c59;
-      border: 1px solid #ab3c59;
-      color: white;
-      padding: 6px 20px;
-      border-radius: 6px;
+    .p3 {
+      font-size: small;
     }
     .hr1 {
-      background-color: #ab3c59;
-    }
-    .text_view {
-      opacity: 0.3;
-      font-size: 14px;
+     background-color: #ab3c59;
+     font-size: 3px;
     }
     .body_view {
-      border: 1px solid #b5b5b5;
-      border-radius: 10px;
-      padding: 2px;
-      margin: 20px;
-      box-shadow: 6px 8px 10px #b8b8b8;
-    }    
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 306px;
+      text-align: center;
+      border: 1px solid #aeaeae;
+      border-radius: 20px;
+      font-weight: bold;   
+    }
+    button {
+      background-color: #ab3c59;
+      padding: 6px 30px;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid #ab3c59;
+    }
+
 
   </style>
 </head>
 
 <body>
-  <table class="body_view">
-    <thead>
-      <tr>
-        <th><span class="heading">enterprise</span><hr class="hr1"></th>       
-      </tr>
-      
-    </thead>
-    
-    <tbody>
-      <tr>
-        <td><p><span class="span_view">$69<br></span><span class="text_view">per month</span><br>10GB disk space<br>100GB monthlybandwidth<br>20 email accounts<br>
-          Unlimited subdomens</p>
-        </td>
-      
-      </tr>
+  <div class="body_view">
+    <p class="p">interprise</p>
+    <span class="hr1"><hr></span>
+    <p class="p1">$69</p>  
+    <p class="p2">per month</p>
+    <div class="p3">
+    <p>10GB disk space</p>
+    <p>100GB monthlybandwidth</p>
+    <p>20 email accounts</p>
+    <p> Unlimited subdomens</p>
+    <button class="p">buy</button>
+  </div>
+  </div>
 
-    </tbody>
-    <tfoot>
-      <tr>
-        <th><button>buy</button></th>
-      </tr>
-
-    </tfoot>
-  </table>
 </body>
 
 </html>
