@@ -10,23 +10,66 @@
       max-width: 800px;
       margin: 0 auto;
     }
-    .body_view {
-      background-color: #f9fcd5;
-      text-align: center;
-      height: 500px;
-      padding: 30px;
-    }
     h2 {
       text-transform: uppercase;
       font-family: sans-serif;
     }
+    .body_view {      
+      background-color: #f9fcd5;
+      text-align: center;
+      height: 400px;
+      padding: 30px;
+    }
+    .img1 {
+      display: inline-flex;         
+    }
+    .img2 {
+      display: flex;
+    }
+    .calc {
+      transform: rotate(-30deg);
+      transition: 2s;
+      padding: 20px;
+      margin: 24px;
+     
+    }
+    .book {
+      transform: rotate(-15deg);
+      transition: 2s;
+      padding: 18px;
+    }
+    .paper {
+      transform: rotate(15deg);
+      transition: 2s;
+      padding: 18px;
+    }
+    .pallet {
+      transform: rotate(30deg);
+      transition: 2s;
+      padding: 20px;
+      margin: 24px;
+    }
+    .pencil {
+      transform: rotate(90deg);
+    }
+ 
 
   </style>
 </head>
 <body>
   <div class="body_view">
     <h2>Hello, my site!</h2>
-    <div><img src="i" alt=""></div>
+    <div class="img1">
+    <div class="calc"><img src="icons_site/calc.png" width="64" alt=""></div>
+    <div class="book"><img src="icons_site/book.png" width="64" alt=""></div>
+    <div class="paper"><img src="icons_site/paper.png" width="64" alt=""></div>
+    <div class="pallet"><img src="icons_site/pallete.png" width="64" alt=""></div>
+ 
+  </div>
+  <div class="pencil"><img src="icons_site/pencil.png" width="64" alt=""></div>
+
+    
+
   </div>
   
 </body>
