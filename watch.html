@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .watch {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      border: 4px #508a8a solid;
+      background-color: #f5f5f5;
+      border-radius: 50%;
+      position: relative;
+    }
+    .watch div {
+      position: absolute;
+    }
+    .center {
+      width: 5px;
+      height: 5px;
+      top: calc(50% - (5px/2));
+      left: calc(50% - (5px/2));
+      background-color: #508a8a;
+      border-radius: 50%;
+    }
+    .seconds {
+      width: 3px;
+      height: 82px;
+      top: 20px;
+      left: calc(50% - (2px/2));
+      background-color: #65a6a6;
+      animation: time 60s steps(60) infinite;
+      transform-origin: bottom center;
+    }
+    .minutes {
+      width: 3px;
+      height: 62px;
+      top: 40px;
+      left: calc(50% - (2px/2));
+      background-color: #037f7f;
+      animation: time 3600s linear infinite;
+      transform-origin: bottom center;
+    }
+    .hours {
+      width: 3px;
+      height: 42px;
+      top: 60px;
+      left: calc(50% - (2px/2));
+      background-color: #1c3232;
+      animation: time 43200s linear infinite;
+      transform-origin: bottom center;
+    }
+    @keyframes time {
+      from {
+        transform: rotate(0);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Back</a></p>
+  <div class="watch">
+    <div class="center"></div>
+    <div class="seconds"></div>
+    <div class="minutes"></div>
+    <div class="hours"></div>
+  </div>
+</body>
+
+</html>

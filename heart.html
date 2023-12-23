@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      transform: scale(1);
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      filter: grayscale(2);
+      transition: 1s;
+    }
+
+    div:hover img {
+      filter: grayscale(0);
+      transition: 1s;
+    }
+
+    div:hover {
+      transform: scale(2);
+      transition: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Back</a></p>
+  <div><img src="icons/favorites.png" alt=""></div>
+</body>
+</html>

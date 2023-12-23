@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text_img</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .text {
+      background-color: #f4f4f4;
+      width: 400px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;      
+    }
+
+    p {
+      text-transform: uppercase;
+    }
+
+    .revers {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .img_view {
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .body_view {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      transition: filter .3s;
+    }
+    .body_view:hover {
+      filter: brightness(0.5);
+      transition: filter .3s;
+    }
+    .body_view img {
+      transition: transform 1s;
+    }
+    .body_view:hover img {
+      transform: scale(1.5);
+      transition: transform 1s;
+    }
+  
+  </style>
+</head>
+
+<body>
+  <span><a href="index.html">Back</a></span>
+  <div class="body_view">
+    <div class="text">
+      <p>hello, world!</p>
+    </div>
+    <div class="img_view"><img width="400px" src="icons/desktop.jpg" alt=""></div>
+  </div>
+  <div class="body_view">
+  <div class="revers">
+    <div class="text">
+      <p>hello, world!</p>
+    </div>
+    <div class="img_view"><img width="400px" src="icons/desktop.jpg" alt=""></div>
+  </div>
+</div>
+  <div class="body_view">
+    <div class="text">
+      <p>hello, world!</p>
+    </div>
+    <div class="img_view"><img width="400px" src="icons/desktop.jpg" alt=""></div>
+  </div>
+
+</body>
+
+</html>
