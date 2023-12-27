@@ -9,92 +9,72 @@
   <style>
     body {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 10px auto;
     }
-
     h2 {
       text-transform: uppercase;
-      font-family: sans-serif;
+      font-family: sans-serif; 
+      text-align: center;    
     }
-
     .body_view {
-      background-color: #f9fcd5;
-      text-align: center;
       display: flex;
+      background-color: #f9fcd5;
       justify-content: center;
       height: 400px;
+      margin: 10px auto;   
+      position: relative;      
+    }
+    .calc {
+      animation: move 2s linear .5s both; 
+      rotate: -10deg;
+      padding: 10px;   
+    }
+    .book { 
+      animation: move 2s ease 1s both;
+      rotate: -15deg;
+      padding: 10px;
+    }
+    .paper { 
+      animation: move 2s ease 1.5s both;
+      rotate: 15deg;
+      padding: 10px;
+    }
+    .pallet {   
+      animation: move 2s ease 2s both;
+      rotate: 30deg;
       padding: 30px;
     }
-
-    .img1 {
-      display: inline-flex;
-      position: absolute;
-      bottom: 650px;
+    .pencil {   
+      animation: move 2s ease 2.5s both;
     }
-
-    .calc {
-      transform: rotate(-30deg);
-      padding: 20px;
-      margin: 24px;
-      transition-delay: .5s;
-      animation: move 2s ease;
-
-    }
-
-    .book {
-      transform: rotate(-15deg);
-      padding: 18px;
-      transition-delay: 1s;
-      animation: move 2s ease;
-    }
-
-    .paper {
-      transform: rotate(15deg);
-      padding: 18px;
-      transition-delay: 1.5s;
-      animation: move 2s ease;
-    }
-
-    .pallet {
-      transform: rotate(30deg);
-      padding: 20px;
-      margin: 24px;
-      transition-delay: 2s;
-      animation: move 2s ease;
-    }
-
-    .pencil {
-      transform: rotate(90deg);
-      position: absolute;
-      bottom: 650px;
-      transition-delay: 2.5s;
-      animation: move 2s ease;
-
+    span {
+      text-align: center;
+      transform: translate(-250px, 10px) rotate(90deg);
     }
 
     @keyframes move {
       from {
-        
+        transform: translate(300px, 350px);
+        opacity: 0;
       }
       to {
-     
+        transform: translate(-10px, 100px) rotate(720deg);
       }
     }
   </style>
 </head>
 
-<body>
+<body>  
+
   <div class="body_view">
     <h2>Hello, my site!</h2>
-    <div class="img1">
-      <div class="calc"><img src="icons_site/calc.png" width="64" alt=""></div>
-      <div class="book"><img src="icons_site/book.png" width="64" alt=""></div>
-      <div class="paper"><img src="icons_site/paper.png" width="64" alt=""></div>
-      <div class="pallet"><img src="icons_site/pallete.png" width="64" alt=""></div>
-    </div>
-    <div class="pencil"><img src="icons_site/pencil.png" width="64" alt=""></div>
+      <img class="calc" src="icons_site/calc.png" width="64" height="64">
+      <img class="book" src="icons_site/book.png" width="128" height="128">
+      <img class="paper" src="icons_site/paper.png" width="128" height="128">
+      <img class="pallet" src="icons_site/pallete.png" width="64" height="64">  
+    <span><img class="pencil" src="icons_site/pencil.png" width="64"></span>
   </div>
-
+</div>
 </body>
 
 </html>
