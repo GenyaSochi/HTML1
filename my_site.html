@@ -7,21 +7,20 @@
   <title>My_site</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      max-width: 800px;
-      margin: 10px auto;
-    }
+
     h2 {
       text-transform: uppercase;
       font-family: sans-serif; 
       text-align: center;    
     }
     .body_view {
+      max-width: 800px;
+      margin: 10px auto;
       display: flex;
+      justify-content: flex-end;
       background-color: #f9fcd5;
       justify-content: center;
-      height: 400px;
-      margin: 10px auto;   
+      height: 400px;    
       position: relative;      
     }
     .calc {
@@ -55,23 +54,22 @@
 
     @keyframes move {
       from {
-        transform: translate(300px, 350px);
+        transform: translate(-100px, 300px);
         opacity: 0;
       }
       to {
-        transform: translate(-30px, 90px) rotate(720deg);
+        transform: translate(-20px, 90px) rotate(720deg);
       }
     }
   </style>
 </head>
 
 <body>  
-
   <div class="body_view">
     <h2>Hello, my site!</h2>
       <img class="calc" src="icons_site/calc.png" width="64" height="64">
-      <img class="book" src="icons_site/book.png" width="128" height="128">
-      <img class="paper" src="icons_site/paper.png" width="128" height="128">
+      <img class="book" src="icons_site/book.png" width="96" height="96">
+      <img class="paper" src="icons_site/paper.png" width="96" height="96">
       <img class="pallet" src="icons_site/pallete.png" width="64" height="64">  
     <span><img class="pencil" src="icons_site/pencil.png" width="64"></span>
   </div>
