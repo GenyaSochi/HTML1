@@ -7,70 +7,89 @@
   <title>Inky_Deals</title>
   <link rel="stylesheet" href="style.css">
   <style>
+
+    * {
+      box-sizing: border-box;
+    }
     body {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
       box-sizing: border-box;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       background-color: #d4d4d4;
     }
-
     article {
-      width: 800px;
+      width: 1000px;
       margin: 40px auto;
       padding: 20px 150px 60px;
       background-color: #f0f0f0;
       box-shadow: 0 0 16px rgba(0, 0, 0, 0.7);
     }
 
-    .inky {
-      margin: 20px;
-      padding: 30px;
-      background-color: #f2f2f2;
+    #id {
+      float: left;
     }
-
     p {
       font-size: 18px;
       font-family: 'Times New Roman', Times, serif;
     }
-
     .img1 {
-     float: top-left;   
+      text-align: left;
+      float: left;
+      margin-left: 15px;
+      border-radius: 50%;
     }
-    .slog {
-    float: right;
-    font-style: italic;
-    text-align: right;
-    font-size: 15px;
-    width: 30%;
+    .img2 {
+      text-align: right;
+      float: right;
+      margin-right: 15px;
+      border-radius: 50%;
     }
 
+
+    .slog {
+      display: flex;
+      font-style: italic;
+      font-weight: normal;    
+      color: #909090;
+      font-size: 15px;
+      width: 30%;
+    }
     .block1 {
-      width: 644px;
+      width: 696px;
+      height: 200px;
       background-color: #f9f9f9;
       padding: 10px 76px;
       text-align: center;
-      border: 1px solid #e5e5e5;
+      border: 1px solid #e5e5e5;      
     }
-
     .block2 {
-      width: 600px;
+      width: 696px;
+      height: 200px;
       background-color: #f2f2f2;
       text-align: center;
       border: 1px #e5e5e5;
     }
-
     .main {
-      border: 1px solid #e5e5e5;
+      border-left: 2px solid #ddd;
+      border-right: 2px solid #ddd;
     }
-    .clearfix ::before, .clearfix ::after {
+    h1, h2, h3 {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, monospace;
+      text-align: center;
+    }
+    .clearfix ::before,
+    .clearfix ::after {
       content: "";
       display: table;
-      padding: 20px;
+      padding: 0 30px;
+      display: flex;      
     }
     .clearfix ::after {
       clear: both;
+      display: flex;
     }
+
   </style>
 </head>
 
@@ -78,45 +97,52 @@
   <article>
 
     <header class="clearfix">
-      <p class="img1">
+      <div id="logo-inky-black">
         <img src="icons/logo-inky-black.png" alt="">
-      </p>
+      </div>
       <div class="slog">
-        <h2>Daily Deals for Creative Professionals</h2>
+        <h1>Daily Deals for Creative Professionals</h1>
       </div>
     </header>
 
     <div class="main">
       <div class="block1">
-        <h1 class="text_view">
+        <h2>
           Here is what InkyDeals is all about
-        </h1>
-        <p>We've made a lot of friends along the way and nothing would make us happier than being able to
+        </h2>
+        <p>
+          We've made a lot of friends along the way and nothing would make us happier than being able to
           consider you
-          part of our community. So let's get to know each other better. Here are some insights about as: </p>
+          part of our community. So let's get to know each other better. Here are some insights about as:
+        </p>
       </div>
       <div class="block2">
-        <h3>Average discount:</h3>
-        <p>The average discount for our products was <b>93.4%</b></p>
-        <img class="img_view" src="icons/average-discount.jpg" alt="">
+        <img class="img1" src="icons/average-discount.jpg" alt="">
+        <h3>
+          Average discount:
+        </h3>
+        <p>
+          The average discount for our products was <strong>93.4%</strong>
+        </p>
+
       </div>
       <div class="block1">
-        <h3 class="text_view">
+        <img class="img2" src="icons/rating.jpg" alt="">
+        <h3>
           Average user rating:
         </h3>
         <p>
-          The average user rating for our deals was <b>4.5 out of 5 stars</b>
+          The average user rating for our deals was <strong>4.5 out of 5 stars</strong>
         </p>
-        <img class="img_view" src="icons/rating.jpg" alt="">
       </div>
       <div class="block2">
+        <img class="img1" src="icons/total-deals.jpg" alt="">
         <h4>
           Total number of deals:
         </h4>
         <p>
-          In the last 5 months we've launched <b>134 new deals.</b>
+          In the last 5 months we've launched <strong>134 new deals.</strong>
         </p>
-        <img class="img_view" src="icons/total-deals.jpg" alt="">
       </div>
       <div class="block1">
         <h3>
@@ -127,9 +153,7 @@
           about a deal, a design bundle, or us - cause we're pretty sociable:).
         </p>
       </div>
-    </div>
-
-    </div>
+    </div>  
   </article>
 
 
