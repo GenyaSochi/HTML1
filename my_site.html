@@ -7,68 +7,136 @@
   <title>My_site</title>
   <link rel="stylesheet" href="style.css">
   <style>
-
-    h2 {
-      text-transform: uppercase;
-      font-family: sans-serif; 
-      text-align: center;    
-    }
-    .body_view {
+    body {
       max-width: 800px;
-      margin: 10px auto;
-      display: flex;
-      justify-content: flex-end;
-      background-color: #f9fcd5; 
-      height: 400px;    
-      position: relative;      
-    }
-    .calc {
-      animation: move 2s linear .5s both; 
-      rotate: -15deg; 
-    }
-    .book { 
-      animation: move 2s ease 1s both;
-      rotate: -15deg;     
-    }
-    .paper { 
-      animation: move 2s ease 1.5s both;
-      rotate: 15deg;     
-    }
-    .pallet {   
-      animation: move 2s ease 2s both;
-      rotate: 30deg;
-    }
-    .pencil {   
-      animation: move 2s ease 2.5s both;
-    }
-    span {
-      text-align: center;
-      transform: translate(-250px, 10px) rotate(90deg);
+      margin: 0 auto;
     }
 
-    @keyframes move {
+    .body_view {
+      background-color: #f9fcd5;
+      text-align: center;
+      justify-content: center;  
+      height: 500px;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .calc {
+      display: flex;
+      translate: 110px 110px;  
+      animation: calc 2s;
+      rotate: -15deg;
+      scale: 1.4;
+    }
+
+    .book {
+      display: flex;
+      translate: 262px 5px;
+      animation: book 2s;
+      rotate: -10deg;
+      scale: 1.6;
+    }
+
+    .paper {
+      display: flex;
+      translate: 424px -92px;    
+      animation: paper 2s;
+      rotate: 10deg;
+      scale: 1.6;
+    }
+
+    .pallet {
+      display: flex;
+      translate: 585px -140px;
+      animation: pallet 2s;
+      rotate: 212deg;
+      scale: 1.4;
+    }
+
+    .pencil {
+      display: flex;
+      translate: 352px -80px;
+      animation: paper 2s;
+      rotate: 90deg;
+      scale: 1.5;
+    }
+
+    @keyframes calc {
       from {
-        transform: translate(-100px, 300px);
+        transform: translate(100px, 350px);
         opacity: 0;
+        transition: linear .5;
       }
+
       to {
-        transform: translate(-30px, 90px) rotate(720deg);
+        transform: translate(0px, 10px) rotate(1080deg);
+      }
+    }
+
+    @keyframes book {
+      from {
+        transform: translate(100px, 350px);
+        opacity: 0;
+        transition: linear 1.0;
+      }
+
+      to {
+        transform: translate(0px, 10px) rotate(1080deg);
+      }
+    }
+
+    @keyframes paper {
+      from {
+        transform: translate(100px, 350px);
+        opacity: 0;
+        transition: linear 1.5;
+      }
+
+      to {
+        transform: translate(0px, 10px) rotate(1080deg);
+      }
+    }
+
+    @keyframes pallet {
+      from {
+        transform: translate(0px, -350px);
+        opacity: 0;
+        transition: linear 2.0;
+      }
+
+      to {
+        transform: translate(0px, 10px) rotate(1080deg);
+      }
+    }
+
+    @keyframes pensil {
+      from {
+        transform: translate(-30px, 50px);
+        opacity: 0;
+        transition: linear 2.5;
+      }
+
+      to {
+        transform: translate(0px, 10px) rotate(1080deg);
       }
     }
   </style>
 </head>
 
-<body>  
-
+<body>
   <div class="body_view">
-    <h2>Hello, my site!</h2>
-      <img class="calc" src="icons_site/calc.png" width="64" height="64">
-      <img class="book" src="icons_site/book.png" width="96" height="96">
-      <img class="paper" src="icons_site/paper.png" width="96" height="96">
-      <img class="pallet" src="icons_site/pallete.png" width="64" height="64">  
-    <span><img class="pencil" src="icons_site/pencil.png" width="64"></span>
+    <h1>
+      Hello, my site!
+    </h1>
+    <img class="calc" src="icons_site/calc.png" width="64" height="64">
+    <img class="book" src="icons_site/book.png" width="96" height="96">
+    <img class="paper" src="icons_site/paper.png" width="96" height="96">
+    <img class="pallet" src="icons_site/pallete.png" width="64" height="64">
+    <img class="pencil" src="icons_site/pencil.png" width="64" height="64">
   </div>
-</div>
 </body>
 
 </html>
