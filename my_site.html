@@ -28,6 +28,7 @@
       display: flex;
       translate: 110px 110px;  
       animation: calc 2s;
+      transition: linear .5s;
       rotate: -15deg;
       scale: 1.4;
     }
@@ -36,6 +37,7 @@
       display: flex;
       translate: 262px 5px;
       animation: book 2s;
+      transition: linear 1.0s;
       rotate: -10deg;
       scale: 1.6;
     }
@@ -44,6 +46,7 @@
       display: flex;
       translate: 424px -92px;    
       animation: paper 2s;
+      transition: linear 1.5s;
       rotate: 10deg;
       scale: 1.6;
     }
@@ -52,6 +55,7 @@
       display: flex;
       translate: 585px -140px;
       animation: pallet 2s;
+      transition: linear 2.0s;
       rotate: 212deg;
       scale: 1.4;
     }
@@ -60,6 +64,7 @@
       display: flex;
       translate: 352px -80px;
       animation: paper 2s;
+      transition: linear 2.5s;
       rotate: 90deg;
       scale: 1.5;
     }
@@ -67,8 +72,7 @@
     @keyframes calc {
       from {
         transform: translate(100px, 350px);
-        opacity: 0;
-        transition: linear .5;
+        opacity: 0;       
       }
 
       to {
@@ -79,8 +83,7 @@
     @keyframes book {
       from {
         transform: translate(100px, 350px);
-        opacity: 0;
-        transition: linear 1.0;
+        opacity: 0;        
       }
 
       to {
@@ -91,8 +94,7 @@
     @keyframes paper {
       from {
         transform: translate(100px, 350px);
-        opacity: 0;
-        transition: linear 1.5;
+        opacity: 0;       
       }
 
       to {
@@ -103,8 +105,7 @@
     @keyframes pallet {
       from {
         transform: translate(0px, -350px);
-        opacity: 0;
-        transition: linear 2.0;
+        opacity: 0;   
       }
 
       to {
@@ -115,8 +116,7 @@
     @keyframes pensil {
       from {
         transform: translate(-30px, 50px);
-        opacity: 0;
-        transition: linear 2.5;
+        opacity: 0;     
       }
 
       to {
@@ -127,15 +127,16 @@
 </head>
 
 <body>
+  <p><a href="index.html">Back</a></p>
   <div class="body_view">
     <h1>
       Hello, my site!
     </h1>
-    <img class="calc" src="icons_site/calc.png" width="64" height="64">
-    <img class="book" src="icons_site/book.png" width="96" height="96">
-    <img class="paper" src="icons_site/paper.png" width="96" height="96">
-    <img class="pallet" src="icons_site/pallete.png" width="64" height="64">
-    <img class="pencil" src="icons_site/pencil.png" width="64" height="64">
+    <img class="calc" src="icons_site/calc.png" width="64" height="64" alt="calculator">
+    <img class="book" src="icons_site/book.png" width="96" height="96" alt="book">
+    <img class="paper" src="icons_site/paper.png" width="96" height="96" alt="paper">
+    <img class="pallet" src="icons_site/pallete.png" width="64" height="64" alt="paints">
+    <img class="pencil" src="icons_site/pencil.png" width="64" height="64" alt="pencil">
   </div>
 </body>
 
