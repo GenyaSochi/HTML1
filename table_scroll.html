@@ -7,42 +7,36 @@
   <title>Table_scroll</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      max-width: 800px;
+    div {
+      max-width: 900px;
       margin: 10px auto;
       background-color: #f6f6f6;
-      border-collapse: collapse;
-    }
-
-    div {
-      width: 1300px;
-      text-align: center;
       overflow: scroll;
     }
 
-    th {
-      padding: 0 5px;
-      background-color: #c3dbe8;
+    table {  
+      text-align: center;
+      border-collapse: collapse;
+    }
 
+    th {
+      padding: 0 12px;
+      background-color: #c3dbe8;
       text-align: center;
       height: 40px;
       width: 79px;
       vertical-align: middle;
-      border-collapse: collapse;
-
+      position: sticky;
     }
-
-    .td {
-      width: 74px;
-      padding: 10px;
-      background-color: #c3dbe8;
-      vertical-align: middle;
-      font-weight: bold;
-      border-collapse: collapse;
-    }
+ 
+    td:nth-child(2n-1) {
+      background-color:#ebebeb;
+    } 
+ 
+   
   </style>
 </head>
-
+<p><a href="index.html">Back</a></p>
 <body>
   <div>
     <table>
@@ -58,18 +52,11 @@
           <th>Header 7</th>
           <th>Header 8</th>
           <th>Header 9</th>
-          <th>Header 10</th>
-          <th>Header 11</th>
-          <th>Header 12</th>
-          <th>Header 13</th>
-          <th>Header 14</th>
-          <th>Header 15</th>
-
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="td">Line 1</td>
+          <th>Line 1</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -79,12 +66,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 2</td>
+          <th>Line 2</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -94,12 +78,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 3</td>
+          <th>Line 3</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -109,12 +90,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 4</td>
+          <th>Line 4</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -124,12 +102,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 5</td>
+          <th>Line 5</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -139,12 +114,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 6</td>
+          <th>Line 6</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -154,12 +126,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 7</td>
+          <th>Line 7</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -169,12 +138,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 8</td>
+          <th>Line 8</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -184,12 +150,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 9</td>
+          <th>Line 9</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -199,12 +162,9 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
         <tr>
-          <td class="td">Line 10</td>
+          <th>Line 10</th>
           <td>20</td>
           <td>30</td>
           <td>40</td>
@@ -214,9 +174,6 @@
           <td>80</td>
           <td>90</td>
           <td>100</td>
-          <td>110</td>
-          <td>120</td>
-          <td>130</td>
         </tr>
       </tbody>
     </table>
