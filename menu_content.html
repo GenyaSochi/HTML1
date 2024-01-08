@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu_Content</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    menu {
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .menu a {
+      display: block;
+      border-radius: 0;
+      background: #6a9a6d;
+      color: white;
+      margin: 0;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: 1s;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      background: #6a9a6d;
+    }
+
+    .menu li {
+      position: relative;
+      padding: 1px;
+      background-color: #58815b;
+    }
+
+    .menu li ul {
+      display: none;
+      position: absolute;
+    }
+
+    .menu a:hover {
+      background: #58815b;
+      transition: 1s;
+    }
+
+    .menu li:hover>ul {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menu .inner {
+      left: 100%;
+      top: 0;
+    }
+
+    a {
+      padding: 10px;
+    }
+
+    .ul {
+      width: 88.42px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="#">home</a>
+      </li>
+      <li>
+        <a href="#">categories</a>
+        <ul class="ul">
+          <li>
+            <a href="#">man</a>
+          </li>
+          <li>
+            <a href="#">woomen</a>
+            <ul class="inner">
+              <li>
+                <a href="#">dress</a>
+              </li>
+              <li>
+                <a href="#">pants</a>
+              </li>
+              <li>
+                <a href="#">shoes</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">kids</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">about</a>
+      </li>
+      <li>
+        <a href="#">contacts</a>
+      </li>
+    </ul>
+
+  </div>
+  <header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum unde libero neque ipsam, hic molestias sunt ad
+      rem odit minima dolor excepturi commodi voluptates earum. Magnam eos eius quisquam recusandae?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestias voluptatibus? Natus architecto magnam
+      sed molestias aliquid omnis, ipsum fuga facilis aliquam excepturi ducimus maiores aspernatur vitae? Omnis,
+      pariatur explicabo.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam placeat nostrum dolore assumenda, provident id
+      esse quidem sunt vitae quas unde, laboriosam, adipisci eum rem tempore nisi deleniti ex accusamus.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat a eos omnis dolorem, id doloribus dolor magni
+      voluptatum nisi, quam aut ex eveniet provident quod, eius totam ad libero amet.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam amet magni sunt vitae maxime perferendis
+      perspiciatis, temporibus porro illo officiis optio. Culpa ab ipsam eius ut expedita corporis quia dolorem?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem unde natus voluptatum vel exercitationem, modi
+      incidunt aperiam repudiandae optio odit autem laudantium voluptatem quia inventore, ab quaerat! Repudiandae,
+      eaque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem, ad error officiis, iste magni in
+      perspiciatis id consequatur esse dolore velit quidem doloremque ducimus deserunt temporibus tenetur cumque
+      dolorum!
+    </p>
+  </header>
+</body>
+</html>
