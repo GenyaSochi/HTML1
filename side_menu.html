@@ -7,29 +7,47 @@
   <title>Side_menu</title>
   <style>
     ul {
-      width: 320px;
+      width: 80px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: #8a8a8a;
+      list-style-type: none;
+      overflow: hidden;
+      transition: 1s;
+      font-size: 16px;
+    }
+    ul:hover {
+      width: 280px;
+      transition: 1s;
+      font-size: 20px;
 
     }
 
     li {
       text-transform: uppercase;
-      padding: 30px 100px 30px 20px;
       color: white;
-      font-size: 20px;
-      background-color: #8a8a8a;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-    
+      
     }
-
-    li:hover {
-      background-color: #696969;
+    
+    ul a {
+      font-size: 20px;
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 20px 0 20px 80px;
       transition: 1s;
     }
-    span:hover {
-      left: 120px;
+
+    ul a:hover {
+      background-color: #696969;
+    }
+    
+    .edit {
+      background: url(icons/edit.png) 10px center/contain no-repeat;
     }
    
 
@@ -39,12 +57,12 @@
 <body>
   <nav>
     <ul>
-      <li>menu</li>
-      <li><img src="icons/edit.png" width="64" height="64" alt=""><a href="#"></a><span>edit</span></li>
-      <li><img src="icons/favorites.png" width="64" height="64" alt=""><a href="#"></a><span>favorites</span></li>
-      <li><img src="icons/history.png" width="64" height="64" alt=""><a href="#"></a><span>history</span></li>
-      <li><img src="icons/security.png" width="64" height="64" alt=""><a href="#"></a><span>security</span></li>
-      <li><img src="icons/settings.png"width="64" height="64" alt=""><a href="#"></a><span>settings</span></li>
+      <li style="text-align: center; padding: 20px 0; height: 23px;">menu</li>
+      <li><a class="edit" href="#"><span>edit</span></a></li>
+      <li><a class="favorites" href="#"><span>favorites</span></a></li>
+      <li><a class="history" href="#"><span>history</span></a></li>
+      <li><a class="security" href="#"><span>security</span></a></li>
+      <li><a class="settings" href="#"><span>settings</span></a></li>
     </ul>
   </nav>
 
