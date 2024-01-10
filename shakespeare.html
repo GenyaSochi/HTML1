@@ -8,33 +8,39 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
-    } 
+    }
 
     .li_first {
       text-transform: uppercase;
       list-style-type: none;
       padding-right: 40px;
-    }   
+    }
 
     li {
       text-transform: capitalize;
       list-style-type: none;
       padding-right: 20px;
-      color: white;  
+      color: white;
     }
+
     .menu ul {
       display: flex;
       position: relative;
       list-style: none;
-      background-color: #8c3947; 
-       
+      background-color: #8c3947;
+      margin: 0;
+
     }
+
     .menu li {
       position: relative;
       padding: 10px;
-      background-color: #8c3947;    }
+      background-color: #8c3947;
+      margin: 0;
+    }
+
     .menu a {
       display: block;
       border-radius: 0;
@@ -44,22 +50,32 @@
       text-decoration: none;
       transition: 1s;
     }
+
     .menu li:hover {
       background-color: #7d323e;
     }
+
     .menu a:hover {
       background: #7d323e;
     }
+
+    h2 {
+      display: flex;
+      width: 900px;
+    }
+
+    .content {
+      background-color: #f5f5f5; 
+      margin: 0;   
  
-   
-    
 
 
+    }
   </style>
 </head>
 
 <body>
-  <div class="menu">
+  <menu class="menu">
     <ul>
       <li class="li_first"><a href="">writers</a></li>
       <li><a href="#">discussions</a></li>
@@ -67,7 +83,13 @@
       <li><a href="#">the authors</a></li>
       <li><a href="#">readers</a></li>
     </ul>
+  </menu>
+  <div class="content">
+    <h2 class="h2">William Shakespeare</h2>
+    <hr>
+    <p>From Wikipedia, the free encyclopedia</p>
   </div>
+</div>
 
 </body>
 
