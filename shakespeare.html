@@ -31,7 +31,6 @@
     .li_first {
       text-transform: uppercase;
       list-style-type: none;
-      padding-right: 40px;
     }
 
     li {
@@ -39,7 +38,6 @@
       list-style-type: none;
       padding-right: 20px;
       color: white;
-      padding: 10px;
     }
 
     .menu li ul {
@@ -55,6 +53,7 @@
       margin: 0;
       text-decoration: none;
       transition: 1s;
+      padding: 10px;
     }
 
     .menu ul {
@@ -90,6 +89,7 @@
       text-align: center;
       width: 657px;
     }
+
     .photo_end {
       padding: 18px 12px;
     }
@@ -102,6 +102,10 @@
     figcaption {
       font-size: 10px;
     }
+
+    img {
+      object-fit: cover;      
+    }
   </style>
 </head>
 
@@ -110,7 +114,7 @@
   <div class="menu">
     <menu class="tab">
       <ul>
-        <li class="li_first"><a href="">writers</a></li>
+        <li class="li_first"><a>writers</a></li>
         <li><a href="#">discussions</a></li>
         <li><a href="#">books</a></li>
         <li><a href="#">the authors</a></li>
@@ -156,7 +160,7 @@
           <figcaption>Anne Hathaway</figcaption>
         </figure>
         <figure>
-          <img src="icons/Dickens_Gurney.jpg" width="72" height="96" alt="Charles_Dickens">
+          <img src="icons/Dickens_Gurney.jpg" width="72" height="96" alt="Charles_Dickens" title="">
           <figcaption>Charles Dickens</figcaption>
         </figure>
         <figure>
