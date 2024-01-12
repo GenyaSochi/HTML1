@@ -74,6 +74,7 @@
       padding-left: 50px;
       width: 500px;
       text-align: justify;
+      position: static;
     }
 
     .h4 {
@@ -107,19 +108,16 @@
       object-fit: cover;
     }
 
-    .shacespeare_fon {
-      background-color: #e7e7e7;
-      display: block;
+    .shacespeare_photo {
+      background-color: #e7e7e7;   
       width: 176px;
       height: 250px;
-    }
-
-    .shacespeare_img {
-      position: relative;
-      margin: 23px;
+      display: flex;
+      justify-content: space-around;
       object-fit: cover;
-
     }
+
+
   </style>
 </head>
 
@@ -135,11 +133,12 @@
         <li><a href="#">readers</a></li>
       </ul>
     </div>
-    <header class="content">
-      <div class="shacespeare_fon">
+    <div>
+      <div class="shacespeare_photo">
         <img src="icons/Shakespeare.jpg" style="  object-fit: cover; " alt="Shakespeare" width="128" height="192"
           title="photo by Shakespeare">
       </div>
+    <header class="content">    
       <h3>William Shakespeare</h3>
       <hr>
       <p class="p_size">From Wikipedia, the free encyclopedia</p>
@@ -203,6 +202,7 @@
         </figure>
       </div>
     </header>
+  </div>
 
   </div>
 
