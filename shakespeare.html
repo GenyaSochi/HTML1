@@ -108,8 +108,8 @@
 
     .shacespeare_photo {
       background-color: #e7e7e7;
-      width: 150px;
-      height: 358px;
+      width: 164px;
+      height: 356px;
       display: flex;
       justify-content: space-around;
       float: right;
@@ -124,16 +124,39 @@
       padding: 3px;
     }
 
-    span {
-      padding: 20px;
-    }
-    #Spouse {
-      padding: 10px;
-    }
- 
-
     b {
       padding: 0 0 0 12px;
+      text-transform: capitalize;
+    }
+
+    .born {
+      padding: 0 0 0 18px;     
+    }
+
+    .died {
+      padding: 0 0 0 20px;
+    }
+
+    .spouse {
+      padding: 0 0 0 10px;
+    }
+
+    .children {
+      padding: 0 0 0 4px;
+    }
+
+    .span_children {
+      padding: 0 0 0 50px;      
+    }
+
+    figcaption {
+      font-size: 9px;
+    }
+    .parents {
+      padding: 0 0 0 8px;
+    }
+    .span_parents{
+      padding: 0 0 0 50px;      
     }
   </style>
 </head>
@@ -156,14 +179,12 @@
           <img class="shacespeare" src="icons/Shakespeare.jpg" style="  object-fit: cover; " alt="Shakespeare"
             width="128" height="192" title="photo by Shakespeare">
           <figcaption>
-            <p><b>Born</b><span>26 April 1564</span></p>
-            <p><b>Died</b><span>23 April 1616</span></p>
-            <p><b>Spouse</b><span id="Spouse">Anne Hathaway (m. 1582)</span></p>
-            <p><b>Children</b><span>Susanna Hall
-              Hamnet Shakespeare
-              Judith Quiney</span></p>
-            <p><b>Parents</b><span>John Shakespeare (father)
-              Mary Arden (mother)</span></p>
+            <p><b>born</b><span class="born">26 April 1564</span></p>
+            <p><b>died</b><span class="died">23 April 1616</span></p>
+            <p><b>spouse</b><span class="spouse">Anne Hathaway (m. 1582)</span></p>
+            <p><b>children</b><span class="children">Susanna Hall<br><span class="span_children">Hamnet
+                  Shakespeare</span><br><span class="span_children">Judith Quiney</span></span></p>
+            <p><b>parents</b><span class="parents">John Shakespeare (father)<br><span class="span_parents">Mary Arden (mother)</span></span></p>
           </figcaption>
         </figure>
       </div>
