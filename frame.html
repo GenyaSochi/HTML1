@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,43 @@
   <style>
     body {
       max-width: 600px;
-      margin: 50px auto;
-    }
-    .container {
-      
+      margin: 10% auto;
     }
 
+    .container {
+      border: 10px solid #d7d9da;
+      height: 300px;
+      width: 300px;
+    }
+    .frame1 {
+      box-sizing: border-box;
+      z-index: -1;
+      border: 10px solid #f9e0f0;
+      border-color: #f9e0f0 transparent;
+      height: 300px;
+      width: 300px;
+      transform: rotate(45deg);
+    }
+    .frame2 {
+      box-sizing: border-box;
+      z-index: 1;
+      border: 10px solid #f9e0f0;
+      border-color: #f9e0f0 transparent;
+      height: 300px;
+      width: 300px;
+      transform: rotate(117deg)
+    }
   </style>
 </head>
+
 <body>
   <div>
-    <div> <img src="icons/wedding.jpg" alt=""></div>
-    <div></div>   
+    <div class="container"><img src="icons/wedding.jpg" alt=""></div>
+    <div class="frame1"></div>
+    <div class="frame2"></div>
   </div>
-  
-  
+
+
 </body>
+
 </html>
