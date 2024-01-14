@@ -31,12 +31,11 @@
     .first {
       text-transform: uppercase;
       padding: 10px 10px;
-      /* list-style-type: none; */
     }
 
     li {
       text-transform: capitalize;
-      list-style-type: none;    
+      list-style-type: none;
       color: white;
     }
 
@@ -108,15 +107,34 @@
     }
 
     .shacespeare_photo {
-      background-color: #e7e7e7;   
-      width: 176px;
-      height: 250px;
+      background-color: #e7e7e7;
+      width: 150px;
+      height: 358px;
       display: flex;
       justify-content: space-around;
-      object-fit: cover;
+      float: right;
+      margin: 10px 40px 0 10px;
     }
 
+    .shacespeare {
+      padding: 10px;
+    }
 
+    .shacespeare_frame {
+      padding: 3px;
+    }
+
+    span {
+      padding: 20px;
+    }
+    #Spouse {
+      padding: 10px;
+    }
+ 
+
+    b {
+      padding: 0 0 0 12px;
+    }
   </style>
 </head>
 
@@ -132,8 +150,26 @@
         <li><a href="#">readers</a></li>
       </ul>
     </div>
-    
-    <header class="content">    
+    <div>
+      <div class="shacespeare_photo">
+        <figure class="shacespeare_frame">
+          <img class="shacespeare" src="icons/Shakespeare.jpg" style="  object-fit: cover; " alt="Shakespeare"
+            width="128" height="192" title="photo by Shakespeare">
+          <figcaption>
+            <p><b>Born</b><span>26 April 1564</span></p>
+            <p><b>Died</b><span>23 April 1616</span></p>
+            <p><b>Spouse</b><span id="Spouse">Anne Hathaway (m. 1582)</span></p>
+            <p><b>Children</b><span>Susanna Hall
+              Hamnet Shakespeare
+              Judith Quiney</span></p>
+            <p><b>Parents</b><span>John Shakespeare (father)
+              Mary Arden (mother)</span></p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <header class="content">
       <h3>William Shakespeare</h3>
       <hr>
       <p class="p_size">From Wikipedia, the free encyclopedia</p>
@@ -197,7 +233,7 @@
         </figure>
       </div>
     </header>
- 
+
 
   </div>
 
