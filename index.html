@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>На проверку</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-      body {
-        max-width: 800px;
-        background-image: url(icons/fon.png);    
-       }
-      a {
-        color: #2c3930;
-        font-size: 20px;
-        font-family:Arial, Helvetica, sans-serif;
-        padding: 20px;        
-      }
-      .fon {
-        display: block;
-        background-color: #f5dfdc7f;
-        margin: 30px;
-        padding: 20px;
-        width: 372px;      
-      }
-      span {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>На проверку</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 800px;
+      background-image: url(icons/fon.png);
+    }   
+
+    .fon {
+      display: block;
+      background-color: #e79d947f;
+      width: 800px;
+      height: 60px; 
+    }
+
+    span {
       font-size: 30px;
       background-image: url(icons_list/fon.jpg);
       background-size: cover;
@@ -31,48 +27,85 @@
       -webkit-background-clip: text;
       color: transparent;
       font-weight: bold;
-      font-family: system-ui;
-      /* text-transform: uppercase;  */
-      }
+      font-family: system-ui; 
+    }
+
+    .menu {
+      display: flex;     
+      text-transform: uppercase;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu li {
+      list-style-type: none;
+      position: relative; 
+     
+    }
+
+    /* .menu ul {  
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0; 
+      position: relative;    
+    } */
+
+    .menu a {
+      display: block;
+      border-radius: 0;
+      background-color: #e79d947f;
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+    /* .menu li ul {  
+      display: none;
+      position: absolute;
+    } */
+
+    .menu li:hover, a:hover {
+      background: #e8779d;
+      transition: 1s;
       
-    </style>   
+    }
+
+    .menu li:hover>ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .li_view {
+ 
+      padding: 0;
+      background-color: rgb(160, 160, 209);
+    }
+ 
+
+  </style>
 </head>
+
 <body>
   <div class="fon">
-  <p><i><a href="romeo.html"><span>Romeo</span></a></i></p>
-  <p><i><a href="practice_1.html"> <span>Practice_1</span></a></i></p>
-  <p><i><a href="card_game.html"><span>Card Game</span></a></i></p>
-  <p><i><a href="tutorial.html"><span>Tutorial</span></a></i></p>
-  <p><i><a href="practice_2.html"><span>Practice_2</span></a></i></p>
-  <p><i><a href="practice_3.html"><span>Practice_3</span></a></i></p>
-  <p><i><a href="fruits.html"><span>Fruits</span></a></i></p>
-  <p><i><a href="list.html"><span>MyList</span></a></i></p>
-  <p><i><a href="tag.html"><span>Tag</span></a></i></p>
-  <p><i><a href="seasons.html"><span>Seasons</span></a></i></p>
-  <p><i><a href="contents.html"><span>Contents</span></a></i></p>
-  <p><i><a href="html_page.html"><span>HTML_Page</span></a></i></p>
-  <p><i><a href="practice_4.html"><span>Practice_4</span></a></i></p>
-  <p><i><a href="computer_programming.html"><span>Computer_programming</span></a></i></p>
-  <p><i><a href="food.html"><span>Food</span></a></i></p>
-  <p><i><a href="network.html"><span>Network</span></a></i></p>
-  <p><i><a href="menu.html"><span>Menu</span></a></i></p>
-  <p><i><a href="cats_gallery.html"><span>Cats_Gellary</span></a></i></p>
-  <p><i><a href="layout.html"><span>Layout</span></a></i></p>
-  <p><i><a href="watch.html"><span>Watch</span></a></i></p>
-  <p><i><a href="door.html"><span>Door</span></a></i></p>
-  <p><i><a href="progress_bar.html"><span>Progress_Bar</span></a></i></p>
-  <p><i><a href="heart.html"><span>Heart</span></a></i></p>
-  <p><i><a href="table.html"><span>Table</span></a></i></p>
-  <p><i><a href="text_img.html"><span>Text_img</span></a></i></p>
-  <p><i><a href="subscription.html"><span>Subscription</span></a></i></p>
-  <p><i><a href="clip.html"><span>Clip</span></a></i></p>
-  <p><i><a href="inky_deals.html"><span>Inky_Deals</span></a></i></p>
-  <p><i><a href="my_site.html"><span>My_site</span></a></i></p>
-  <p><i><a href="table_scroll.html"><span>Table_scroll</span></a></i></p>
-  <p><i><a href="menu_content.html"><span>Menu_Content</span></a></i></p>
-  <p><i><a href="side_menu.html"><span>Side_menu</span></a></i></p>
-  <p><i><a href="shakespeare.html"><span>Shakespeare</span></a></i></p>
-  <p><i><a href="frame.html"><span>Frame</span></a></i></p>
-</div>
-  </body>
-</html> 
+    <ul class="menu">
+      <li><i><span>menu</span></i>      
+          <li><i><span>home work</span></a></i>
+          <ul style="padding: 0;">
+            <li class="li_view"><i><span>dz_1/1</span></i></li>
+            <li></li><i><a href="card_game.html"><span>dz_1/2</span></a></i>
+
+          </ul></li>
+          <li><i><span>practical work</span></i></li>     
+      
+      </li>
+
+    </ul>
+
+  </div>
+
+</body>
+
+</html>
