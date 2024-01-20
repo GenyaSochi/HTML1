@@ -1,0 +1,77 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 75vh auto;
+    gap: 10px;
+    color: #fff;
+    padding: 15px;
+    min-height: calc(100vh - 30px);
+}
+
+header {
+    grid-column: span 12;
+    background: #707070;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform:uppercase
+}
+
+header>div {
+    margin-right: 15px;
+}
+
+.header-logout {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+nav {
+    grid-column: span 2;
+    background: #9c9c9c;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+main {
+    grid-column: span 8;
+    background: #cfcfcf;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+aside {
+    grid-column: span 2;
+    background: #9c9c9c;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+footer {
+    grid-column: span 12;
+    background: #707070;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+nav {
+    text-transform: uppercase;    
+}
+main {
+    text-transform: uppercase;    
+
+}
+aside {
+    text-transform: uppercase;    
+}
+footer {
+    text-transform: uppercase;    
+}  

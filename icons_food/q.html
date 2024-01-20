@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+        body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto 75vh auto;
+    gap: 10px;
+    color: #fff;
+    padding: 15px;
+    min-height: calc(100vh - 30px);
+}
+
+header {
+    grid-column: span 12;
+    background: #707070;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-transform:uppercase
+}
+
+header>div {
+    margin-right: 15px;
+}
+
+.header-logout {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+nav {
+    grid-column: span 2;
+    background: #9c9c9c;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+main {
+    grid-column: span 8;
+    background: #cfcfcf;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+aside {
+    grid-column: span 2;
+    background: #9c9c9c;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+footer {
+    grid-column: span 12;
+    background: #707070;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+nav {
+    text-transform: uppercase; 
+    padding: 20px;
+}
+main {
+    text-transform: uppercase;    
+
+}
+aside {
+    text-transform: uppercase;    
+}
+footer {
+    text-transform: uppercase;    
+}  
+
+.edit {
+    background: url(icons/edit.png)
+
+    }
+
+    .fav {
+      background: url(icons/favorites.png) 0px -5px/ 64px 64px no-repeat;
+      padding: 20px;
+    }
+
+    .history {
+      background: url(icons/history.png) 0px -5px/ 64px 64px no-repeat;
+      padding: 20px;
+    }
+
+    .sec {
+      background: url(icons/security.png) 0px -5px/ 64px 64px no-repeat;
+      padding: 20px;
+        }
+
+    .set {
+      background: url(icons/settings.png) 0px -5px/ 64px 64px no-repeat;
+      padding: 20px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-transform: uppercase;   
+    }
+</style>
+ 
+<body>
+    <div class="container">
+        <header>
+            <div class="header-home">home</div>
+            <div class="header-search">search</div>
+            <div class="header-logout">logout</div>
+        </header>
+        <nav>menu
+            <ul>
+                <li class="edit"><a href="#"></a>edit</li>
+                <li class="fav"><a href="#"></a>favorites</li>
+                <li class="history"><a href="#"></a>history</li>
+                <li class="sec"><a href="#"></a>security</li>
+                <li class="set"><a href="#"></a>setting</li>
+              </ul>
+        </nav>
+        <main>content</main>
+        <aside>news</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
