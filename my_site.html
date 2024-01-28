@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,24 +11,104 @@
       max-width: 800px;
       margin: 0 auto;
     }
+
     .body_view {
       background-color: #f9fcd5;
       text-align: center;
-      height: 500px;
-      padding: 30px;
-    }
-    h2 {
-      text-transform: uppercase;
-      font-family: sans-serif;
+      justify-content: center;  
+      height: 400px;
     }
 
+    h1 {
+      text-transform: uppercase;
+      padding: 10px;
+    }
+
+    .calc {
+      display: flex;
+      transform: rotate(-15deg) translate(126px, 120px); 
+      animation: calc 2s linear 1s both;
+      animation-delay: .5s;   
+    }
+
+    .book {
+      display: flex;
+      transform: rotate(-10deg) translate(248px, -22px);  
+      animation: book 2s linear 1s both;
+      animation-delay: 1.0s;     
+    }
+
+    .paper {
+      display: flex;
+      transform: rotate(10deg) translate(356px, -258px);
+      animation: paper 2s linear 1s both;
+      animation-delay: 1.5s;   
+    }
+
+    .pallet {
+      display: flex;
+      transform: rotate(212deg) translate(-342px, 478px);
+      animation: pallet 2s linear 1s both;
+      animation-delay: 2.0s;     
+    }
+
+    .pencil {
+      display: flex;
+      transform: rotate(90deg) translate(-246px, -346px);
+      animation: paper 2s linear 1s both;
+      animation-delay: 2.5s;   
+    }
+
+    @keyframes calc {
+      from {
+        transform: translateY(600%);    
+        opacity: 0;              
+      }       
+    }
+
+    @keyframes book {
+      from {    
+        transform: translateY(300%);    
+        opacity: 0;       
+      }    
+    }
+
+    @keyframes paper {
+      from {
+        transform: translateY(250%);    
+        opacity: 0;       
+      }      
+    }
+
+    @keyframes pallet {
+      from {
+        transform: translateY(600%);    
+        opacity: 0;  
+      }     
+    }
+
+    @keyframes pensil {
+      from {
+        transform: translateY(600%);    
+        opacity: 0;     
+      }     
+    }
   </style>
 </head>
+
 <body>
+  <p><a href="index.html">Back</a></p>
   <div class="body_view">
-    <h2>Hello, my site!</h2>
-    <div><img src="i" alt=""></div>
+    <h1>
+      Hello, my site!
+    </h1>
+    <img class="calc" src="icons_site/calc.png" width="64" height="64" alt="calculator">
+    <img class="book" src="icons_site/book.png" width="128" height="128" alt="book">
+    <img class="paper" src="icons_site/paper.png" width="128" height="128" alt="paper">
+    <img class="pallet" src="icons_site/pallete.png" width="64" height="64" alt="paints">
+    <img class="pencil" src="icons_site/pencil.png" width="64" height="64" alt="pencil">
   </div>
   
 </body>
+
 </html>

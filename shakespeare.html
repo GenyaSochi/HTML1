@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shakespeare</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 770px;
+      margin: 0 auto;
+    }
+
+    .menu {
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      height: 1172px;
+    }
+
+    .tab {
+      padding: 0;
+    }
+
+    .p_size {
+      font-size: 14px;
+    }
+
+    .first {
+      text-transform: uppercase;
+      padding: 10px 10px;
+    }
+
+    li {
+      text-transform: capitalize;
+      list-style-type: none;
+      color: white;
+    }
+
+    .menu li ul {
+      display: none;
+      position: absolute;
+    }
+
+    .menu a {
+      display: block;
+      border-radius: 0;
+      background: #8c3947;
+      color: white;
+      margin: 0;
+      text-decoration: none;
+      transition: 1s;
+      padding: 10px;
+    }
+
+    .menu ul {
+      display: flex;
+      position: relative;
+      list-style: none;
+      background-color: #8c3947;
+      margin: 0;
+    }
+
+    .menu a:hover {
+      background-color: #2f060d;
+      transition: 1s;
+    }
+
+    .content {
+      padding-left: 50px;
+      width: 500px;
+      text-align: justify;
+      position: static;
+    }
+
+    .h4 {
+      padding: 20px;
+    }
+
+    .photo {
+      padding-left: 50px;
+      border: 1px solid #bfbfbf;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      text-align: center;
+      width: 657px;
+    }
+
+    .photo_end {
+      padding: 18px 12px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 18px;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    img {
+      object-fit: cover;
+    }
+
+    .shacespeare_photo {
+      background-color: #e7e7e7;
+      width: 164px;
+      height: 356px;
+      display: flex;
+      justify-content: space-around;
+      float: right;
+      margin: 10px 40px 0 10px;
+    }
+
+    .shacespeare {
+      padding: 10px;
+    }
+
+    .shacespeare_frame {
+      padding: 3px;
+    }
+
+    b {
+      padding: 0 0 0 12px;
+      text-transform: capitalize;
+    }
+
+    .born {
+      padding: 0 0 0 18px;
+    }
+
+    .died {
+      padding: 0 0 0 20px;
+    }
+
+    .spouse {
+      padding: 0 0 0 10px;
+    }
+
+    .children {
+      padding: 0 0 0 4px;
+    }
+
+    .span_children {
+      padding: 0 0 0 50px;
+    }
+
+    figcaption {
+      font-size: 9px;
+    }
+
+    .parents {
+      padding: 0 0 0 8px;
+    }
+
+    .span_parents {
+      padding: 0 0 0 50px;
+    }
+
+    @media screen and (max-width: 620px) {
+      .menu {
+        display: flex;
+        flex-direction: column;      
+      }
+
+      .p_size {
+        font-size: 10px;
+      }
+
+      .shacespeare {
+        padding: 5px;
+      }
+
+      .shacespeare_photo {
+        display: none;
+      }
+
+      .photo,
+      h4 {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p><a href="index.html">Back</a></p>
+  <div class="menu">
+    <div class="tab">
+      <ul>
+        <li class="first">writers</li>
+        <li><a href="#">discussions</a></li>
+        <li><a href="#">books</a></li>
+        <li><a href="#">the authors</a></li>
+        <li><a href="#">readers</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="shacespeare_photo">
+        <figure class="shacespeare_frame">
+          <img class="shacespeare" src="icons/Shakespeare.jpg" style="  object-fit: cover; " alt="Shakespeare"
+            width="128" height="192" title="photo by Shakespeare">
+          <figcaption>
+            <p><b>born</b><span class="born">26 April 1564</span></p>
+            <p><b>died</b><span class="died">23 April 1616</span></p>
+            <p><b>spouse</b><span class="spouse">Anne Hathaway (m. 1582)</span></p>
+            <p><b>children</b><span class="children">Susanna Hall<br><span class="span_children">Hamnet
+                  Shakespeare</span><br><span class="span_children">Judith Quiney</span></span></p>
+            <p><b>parents</b><span class="parents">John Shakespeare (father)<br><span class="span_parents">Mary Arden
+                  (mother)</span></span></p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <header class="content">
+      <h3>William Shakespeare</h3>
+      <hr>
+      <p class="p_size">From Wikipedia, the free encyclopedia</p>
+      <p>William Shakespeare (bapt. 26 April 1564 – 23 April 1616) was an English poet, playwright and actor, widely
+        regarded as the greatest writer in the English language and the world's greatest dramatist. He is often called
+        England's national poet and the "Bard of Avon". His extant works, including collaborations, consist of
+        approximately 39 plays, 154 sonnets, two long narrative poems, and a few other verses, some of uncertain
+        authorship. His plays have been translated into every major living language and are performed more often than
+        those of any other playwright.</p>
+      <p>Shakespeare was born and raised in Stratford-upon-Avon, Warwickshire. At the age of 18, he married Anne
+        Hathaway, with whom he had three children: Susanna and twins Hamnet and Judith. Sometime between 1585 and 1592,
+        he began a successful career in London as an actor, writer, and part-owner of a playing company called the Lord
+        Chamberlain's Men, later known as the King's Men. At age 49 (around 1613), he appears to have retired to
+        Stratford, where he died three years later. Few records of Shakespeare's private life survive; this has
+        stimulated considerable speculation about such matters as his physical appearance, his sexuality, his religious
+        beliefs, and whether the works attributed to him were written by others. Such theories are often criticised for
+        failing to adequately note that few records survive of most commoners of the period.</p>
+      <p>Shakespeare produced most of his known works between 1589 and 1613. His early plays were primarily comedies and
+        histories and are regarded as some of the best work produced in these genres. Until about 1608, he wrote mainly
+        tragedies, among them Hamlet, Othello, King Lear, and Macbeth, all considered to be among the finest works in
+        the English language. In the last phase of his life, he wrote tragicomedies (also known as romances) and
+        collaborated with other playwrights.</p>
+      <p>Many of Shakespeare's plays were published in editions of varying quality and accuracy in his lifetime.
+        However, in 1623, two fellow actors and friends of Shakespeare's, John Heminges and Henry Condell, published a
+        more definitive text known as the First Folio, a posthumous collected edition of Shakespeare's dramatic works
+        that included all but two of his plays. The volume was prefaced with a poem by Ben Jonson, in which Jonson
+        presciently hails Shakespeare in a now-famous quote as "not of an age, but for all time".</p>
+      <p>Throughout the 20th and 21st centuries, Shakespeare's works have been continually adapted and rediscovered by
+        new movements in scholarship and performance. His plays remain popular and are studied, performed, and
+        reinterpreted through various cultural and political contexts around the world.</p>
+      <h4>Similar authors:</h4>
+
+      <div class="photo">
+        <figure>
+          <img src="icons/Anne_Hathaway.jpg" width="72" height="96" alt="Anne_Hathaway" title="photo by Anne Hathaway">
+          <figcaption>Anne Hathaway</figcaption>
+        </figure>
+        <figure>
+          <img src="icons/Dickens_Gurney.jpg" width="72" height="96" alt="Charles_Dickens"
+            title="photo by Charles Dickens">
+          <figcaption>Charles Dickens</figcaption>
+        </figure>
+        <figure>
+          <img src="icons/Oscar_Wilde_Sarony.jpg" width="72" height="96" alt="Oscar_Wilde" title="photo by Oscar Wilde">
+          <figcaption>Oscar Wilde</figcaption>
+        </figure>
+        <figure>
+          <img src="icons/Cervantes_Jauregui.jpg" width="72" height="96" alt="Cervantes_Jauregui"
+            title="poto by Micuel de Servantes">
+          <figcaption>Micuel de Servantes</figcaption>
+        </figure>
+        <figure>
+          <img src="icons/Edgar_Allan_Poe.jpg" width="72" height="96" alt="Edgar_Allan_Poe"
+            title="photo by Edgar Allan Poe">
+          <figcaption>Edgar Allan Poe</figcaption>
+        </figure>
+        <figure class="photo_end">
+          <img src="icons/WilliamWordsworth.jpg" width="72" height="96" alt="WilliamWordsworth"
+            title="photo by William Wordsworth">
+          <figcaption>William Wordsworth</figcaption>
+        </figure>
+      </div>
+    </header>
+  </div>
+
+</body>
+
+</html>
