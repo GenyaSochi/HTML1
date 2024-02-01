@@ -15,12 +15,11 @@
     .body_view {
       display: grid;
       justify-items: end;
-      grid-template-columns: 110px 1fr 1fr 1fr;
+      grid-template-columns: 70px 1fr 1fr 1fr;
       max-width: 1000px;
-      max-height: 600px;
       background-color: #f5f5f5;
       margin: 0;
-      padding-bottom: 20px;
+      padding: 20px 0;
     }
 
     .tab {
@@ -44,95 +43,70 @@
       color: white;
     } 
 
-    .blok1 {
-      display: grid;
-      max-width: 240px;
-      height: 350px;
+    
+    .blok {
       background-color: #5a5a5a;
-      margin-top: 20px;
+      padding: 20px;
     }
 
-    .blok2 {
-      display: grid;
-      max-width: 240px;
-      height: 350px;
-      background-color: #5a5a5a;
-      margin-top: 20px;
-    }
-
-    .blok3 {
-      display: grid;
-      max-width: 240px;
-      height: 350px;
-      background-color: #5a5a5a;
-      margin-top: 20px;
-    }
-
+    
     img {
-      width: 200px;
-      padding: 20px 20px 0 20px;
+      width: 100%;
     }
 
     h4 {
-      display: flex;
-      justify-content: flex-start;
       text-transform: capitalize;
       color: white;
-      padding: 0 20px;
-      margin: 0;
+      margin: 10px 0;
     }
 
     .text {
       color: white;
-      padding: 0 20px;
       font-size: 12px;
     }   
 
-    @media screen {
-      .body_view {
+    @media screen and (max-width:650px) {
+      /* .body_view {
         width: 830px;
         height: 474px;
         padding-right: 20px;
-      }
+      } */
 
       .text {
         font-size: 16px;    
       }
 
-      .blok1,
+      /* .blok1,
       .blok2,
       .blok3 {
         height: 450px;
-      }
+      } */
     }
 
-    #tab1 {
-      margin-top: 20px;
-    }
   </style>
 </head>
 
 <body>
   <div class="body_view">
     <div>
-      <div id="tab1" class="tab"><a href="">tab 1</a></div>
+      <div class="tab"><a href="">tab 1</a></div>
       <div class="tab"><a href="">tab 2</a></div>
       <div class="tab"><a href="">tab 3</a></div>
     </div>
 
-    <div class="blok1">
+    <div class="blok">
       <img src="icons/350x220.png" width="120" alt="">
       <h4>header 1</h4>
       <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem ut incidunt quisquam
         debitis doloribus. Lorem ipsum dolor sit amet consectetur.</div>
     </div>
-    <div class="blok2">
+    <div class="blok">
       <img src="icons/350x220.png" width="120" alt="">
       <h4>header 2</h4>
       <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reiciendis, numquam
         dolorem reprehenderit veritatis doloremque molestias esse adipisci aliquam vel.</div>
     </div>
-    <div class="blok3">
+    <div class="blok">
       <img src="icons/350x220.png" width="120" alt="">
       <h4>header 3</h4>
       <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reiciendis, numquam
