@@ -12,25 +12,28 @@
       margin: 0 auto;
     }
 
-    .body_view { 
+    .body_view {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-items: end;
+      grid-template-columns: 110px 1fr 1fr 1fr;
       max-width: 1000px;
-      max-height: 800px;
+      max-height: 600px;
       background-color: #f5f5f5;
       margin: 0;
+      padding-bottom: 20px;
     }
 
-    /* .tab {
+    .tab {
       display: flex;
       justify-content: center;
       align-items: center;
       width: 50px;
       height: 40px;
       background-color: #808080;
+      color: white;
       padding: 10px;
       text-transform: capitalize;
-    } */
+    }
 
     .tab:hover {
       background-color: #5a5a5a;
@@ -41,31 +44,101 @@
       color: white;
     }
 
-
-
-
     .blok1 {
-      display: grid;  
-      max-width: 200px;
-      max-height: 300px;
+      display: grid;
+      max-width: 240px;
+      height: 350px;
       background-color: #5a5a5a;
+      margin-top: 20px;
+    }
 
+    .blok2 {
+      display: grid;
+      max-width: 240px;
+      height: 350px;
+      background-color: #5a5a5a;
+      margin-top: 20px;
+    }
+
+    .blok3 {
+      display: grid;
+      max-width: 240px;
+      height: 350px;
+      background-color: #5a5a5a;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 200px;
+      padding: 20px 20px 0 20px;
+    }
+
+    h4 {
+      display: flex;
+      justify-content: flex-start;
+      text-transform: capitalize;
+      color: white;
+      padding: 0 20px;
+      margin: 0;
+    }
+
+    .text {
+      color: white;
+      padding: 0 20px;
+      font-size: 12px;
+    }
+
+    @media screen {
+      .body_view {
+        width: 830px;
+        height: 474px;
+        padding-right: 20px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      .blok1,
+      .blok2,
+      .blok3 {
+        height: 450px;
+      }
+    }
+
+    #tab1 {
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
   <div class="body_view">
-    <div></div>
-    <div class="blok1"></div>
- 
-   
-    
+    <div>
+      <div id="tab1" class="tab">tab 1</div>
+      <div class="tab">tab 2</div>
+      <div class="tab">tab 3</div>
+    </div>
+
+    <div class="blok1">
+      <img src="icons/350x220.png" width="120" alt="">
+      <h4>header 1</h4>
+      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem ut incidunt quisquam
+        debitis doloribus. Lorem ipsum dolor sit amet consectetur.</div>
+    </div>
+    <div class="blok2">
+      <img src="icons/350x220.png" width="120" alt="">
+      <h4>header 2</h4>
+      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reiciendis, numquam
+        dolorem reprehenderit veritatis doloremque molestias esse adipisci aliquam vel.</div>
+    </div>
+    <div class="blok3">
+      <img src="icons/350x220.png" width="120" alt="">
+      <h4>header 3</h4>
+      <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reiciendis, numquam
+        dolorem reprehenderit veritatis doloremque molestias esse adipisci aliquam vel.</div>
+    </div>
   </div>
-
-
-
-
 
 </body>
 
