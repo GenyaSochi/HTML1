@@ -21,11 +21,7 @@
       font-family:Verdana, Geneva, Tahoma, sans-serif;
       padding: 0 0 0 20px;
       margin: 0;
-    }
-    input {
-      display: flex;
-      border-radius: 2px solid #b11f41;
-    }
+    }  
     
     .send {
       background-color: #b11f41;
@@ -34,6 +30,7 @@
       border-radius: 7px;
     }
     input {
+      display: flex;
       margin: 10px 0 0 20px;  
       border-radius: 4px;    
     }
@@ -48,8 +45,8 @@
   <div>
   <form action="form_result.html">
     <input type="text" name="name" placeholder="Имя">
-    <input type="text" address="address" placeholder="Адрес доставки">
-    <input type="email" email="email" placeholder="Почта">
+    <input type="text" name="address" placeholder="Адрес доставки">
+    <input type="email" name="email" placeholder="Почта">
     <input type="tel" name="tel" placeholder="Номер телефона">
     <input class="send" type="submit" value="ⓢⓔⓝⓓ">
   </form>
