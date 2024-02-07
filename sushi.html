@@ -8,10 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .form_view {
-      width: 1200px;
-      height: 300px;
+      max-width: 1200px;
+      height: 250px;
       background-color: #e0e3df;
-      margin: -4px 0 0 0;
+      margin: -5px 0 0 0;
+    }
+
+    form {
+      display: grid;
+      justify-content: start;
+      grid-template-columns: 350px 350px;
     }
 
     h1 {
@@ -37,14 +43,8 @@
 
     .input_sticks {
       display: flex;
-      align-items: baseline;
-      justify-content: flex-end;
-    }
-
-    form {
-      display: grid;
-      justify-content: start;
-      grid-template-columns: 350px ;
+      align-items: baseline;      
+      justify-content: flex-start;
     }
 
     .label {
@@ -53,38 +53,57 @@
       align-items: baseline;
     }
 
-    .agree {
-      margin: 10px 5px 0 20px;
+    .view {
+      margin: 10px 5px 5px 20px;
     }
+
+    
   </style>
 </head>
 
 <body>
-  <div><img src="icons/yaponskie.jpg" width="1200" alt="drawing of japan">
+  <div><img src="icons/yaponskie.jpg" width="1200" height="500" alt="drawing of japan">
     <div class="form_view">
       <h1>ⓥⓐⓢⓗ ⓩⓐⓚⓐⓩ</h1>
       <div>
         <form action="form_result.html">
           <input type="text" name="name" placeholder="Имя">
           <input type="text" name="address" placeholder="Адрес доставки">
-          <input type="email" name="email" placeholder="Почта">
           <input type="tel" name="tel" placeholder="Номер телефона">
+          <input type="email" name="email" placeholder="Почта">
+          <div class="view">
+            <label for="sushi">Суши</label>
+            <select name="sushi" id="sushi">
+              <option value="Philadelphia">Филадельфия</option>
+              <option value="California">Калифорния</option>
+              <option value="Alaska">Аляска</option>
+              <option value="Canada">Канада</option>
+            </select>
+          </div>
+          <div class="view">
+            <label for="napkins">Салфетки</label>
+            <select name="napkins" id="napkins">
+              <option value="yes">да</option>
+              <option value="no">нет</option>
+            </select>
+          </div>
           <div class="label">
-            <input class="agree" type="checkbox" name="agree" id="agree">
+            <input class="view" type="checkbox" name="agree" id="agree">
             <label for="agree">Согласие на обработку персональных данных</label>
           </div>
           <div class="input_sticks">
-            <input class="agree" type="radio" name="sticks" id="teach">
-            <label for="teach">учебные палочки</label>
-            <input class="agree" type="radio" name="sticks" id="regular">
-            <label for="regular">обычные палочки</label>
+            <input class="view" type="radio" name="sticks teach" id="teach">
+            <label for="teach" style="margin: 5px;">учебные палочки</label>
+            <input class="agree" type="radio" name="sticks regular" id="regular">
+            <label for="regular" style="margin: 5px;">обычные палочки</label>
           </div>
+          <input type="text" name="comment" placeholder="Комментарий">
           <input class="send" type="submit" value="ⓢⓔⓝⓓ">
-
         </form>
       </div>
     </div>
   </div>
+  <p><a href="index.html">Back</a></p>
 
 </body>
 
