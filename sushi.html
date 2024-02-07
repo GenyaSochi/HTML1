@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sushi</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
     .form_view {
       width: 1200px;
-      height: 300px;   
+      height: 300px;
       background-color: #e0e3df;
       margin: -4px 0 0 0;
     }
+
     h1 {
       color: #b11f41;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       padding: 0 0 0 20px;
       margin: 0;
-    }  
-    
+    }
+
     .send {
       background-color: #b11f41;
       color: white;
       font-size: 20px;
       border-radius: 7px;
+      width: 100px;
     }
+
     input {
       display: flex;
-      margin: 10px 0 0 20px;  
-      border-radius: 4px;    
+      margin: 10px 0 0 20px;
+      border-radius: 4px;
     }
-    
 
+    .input_sticks {
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+    }
+
+    form {
+      display: grid;
+      justify-content: start;
+      grid-template-columns: 350px ;
+    }
+
+    .label {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+
+    .agree {
+      margin: 10px 5px 0 20px;
+    }
   </style>
 </head>
+
 <body>
   <div><img src="icons/yaponskie.jpg" width="1200" alt="drawing of japan">
-<div class="form_view">
-  <h1>ⓥⓐⓢⓗ ⓩⓐⓚⓐⓩ</h1>
-  <div>
-  <form action="form_result.html">
-    <input type="text" name="name" placeholder="Имя">
-    <input type="text" name="address" placeholder="Адрес доставки">
-    <input type="email" name="email" placeholder="Почта">
-    <input type="tel" name="tel" placeholder="Номер телефона">
-    <input class="send" type="submit" value="ⓢⓔⓝⓓ">
-  </form>
-</div>
-</div>
+    <div class="form_view">
+      <h1>ⓥⓐⓢⓗ ⓩⓐⓚⓐⓩ</h1>
+      <div>
+        <form action="form_result.html">
+          <input type="text" name="name" placeholder="Имя">
+          <input type="text" name="address" placeholder="Адрес доставки">
+          <input type="email" name="email" placeholder="Почта">
+          <input type="tel" name="tel" placeholder="Номер телефона">
+          <div class="label">
+            <input class="agree" type="checkbox" name="agree" id="agree">
+            <label for="agree">Согласие на обработку персональных данных</label>
+          </div>
+          <div class="input_sticks">
+            <input class="agree" type="radio" name="sticks" id="teach">
+            <label for="teach">учебные палочки</label>
+            <input class="agree" type="radio" name="sticks" id="regular">
+            <label for="regular">обычные палочки</label>
+          </div>
+          <input class="send" type="submit" value="ⓢⓔⓝⓓ">
+
+        </form>
+      </div>
+    </div>
   </div>
-  
+
 </body>
+
 </html>
