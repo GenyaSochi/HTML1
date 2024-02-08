@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,40 @@
   <link rel="stylesheet" href="style.css">
   <style>
     .card {
-      display: grid;  
+      display: grid;
       grid-template-columns: 350px;
       grid-template-rows: repeat(6, 1fr);
       margin: 0 auto;
       position: absolute;
       width: 400px;
-      height: 200px;
+      height: 300px;
       background-color: #afcccc;
-      border-radius: 10px;    
+      border-radius: 10px;
       top: 20%;
       right: 50%;
     }
+
     .card_view {
       color: gray;
       opacity: 0.6;
-      margin: 0 10px; 
-      
+      margin: 0 10px;
+
     }
+
     .info {
       background-color: #afcccc;
       height: 30px;
       margin: 0 10px;
-      border: 1px outset #b7d1d1;  
+      border: 1px outset #b7d1d1;
     }
-  
 
+    .card_info {
+
+  
+    }
   </style>
 </head>
+
 <body>
   <div class="card">
     <form action="form_result.html"></form>
@@ -42,7 +49,15 @@
     <input type="text" name="card number" id="card number" class="info" placeholder="1234 5678 9012 3456">
     <label class="card_view" for="card number">Name on card</label>
     <input type="text" name="card name" id="card name" class="info" placeholder="Name Surname">
+
+    <label class="card_view" for="card date">Expiry Date</label>
+    <input type="text" name="card date" id="card date" class="info" placeholder="02">
+    <input type="text" name="card date" id="card date" class="info" placeholder="2017">
+    <label class="card_view" for="card cvv">CVV/CVN</label>
+    <input type="text" name="card cvv" id="card cvv" class="info" placeholder="***">
+
   </div>
-  
+
 </body>
+
 </html>
