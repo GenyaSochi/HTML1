@@ -10,7 +10,7 @@
     .card {
       display: grid;
       grid-template-columns: 350px;
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: repeat(9, 1fr);
       margin: 0 auto;
       position: absolute;
       width: 400px;
@@ -19,12 +19,14 @@
       border-radius: 10px;
       top: 20%;
       right: 50%;
+      gap: 5px;
     }
 
     .card_view {
       color: gray;
       opacity: 0.6;
       margin: 0 10px;
+
     }
 
     .info {
@@ -35,8 +37,17 @@
     }
 
     .card_info {
-
-  
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .place {
+      background-color: #afcccc;
+      height: 30px;
+      margin: 0 10px;
+      border: 1px outset #b7d1d1;
+      width: 60px;
     }
   </style>
 </head>
@@ -48,12 +59,14 @@
     <input type="text" name="card number" id="card number" class="info" placeholder="1234 5678 9012 3456">
     <label class="card_view" for="card number">Name on card</label>
     <input type="text" name="card name" id="card name" class="info" placeholder="Name Surname">
+    <div class="card_info">
+      <label class="card_view" for="card date">Expiry Date</label>
+      <input type="text" name="card date" id="card date" class="place" placeholder="02">
+      <label class="card_view" for="card cvv">CVV/CVN</label>
+      <input type="text" name="card date" id="card date" class="place" placeholder="2017">
+      <input type="text" name="card cvv" id="card cvv" class="place" placeholder="***">
+    </div>
 
-    <label class="card_view" for="card date">Expiry Date</label>
-    <input type="text" name="card date" id="card date" class="info" placeholder="02">
-    <input type="text" name="card date" id="card date" class="info" placeholder="2017">
-    <label class="card_view" for="card cvv">CVV/CVN</label>
-    <input type="text" name="card cvv" id="card cvv" class="info" placeholder="***">
 
   </div>
 
