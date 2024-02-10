@@ -19,7 +19,7 @@
       border-radius: 10px;
       top: 20%;
       right: 50%;
-      padding: 10px;   
+      padding: 10px;
       overflow: hidden;
     }
 
@@ -46,7 +46,6 @@
       width: 284px;
       height: 28px;
       border: 1px outset #b7d1d1;
-
     }
 
     .item3 {
@@ -137,44 +136,45 @@
     .label {
       display: grid;
       align-items: center;
-      position: relative;
-      top: 20px;
-      right: 124px;
+      position: absolute;
+      z-index: 1;
+      top: 24%;
+      right: 62%;
       background-color: #c06a34;
       color: white;
       text-transform: uppercase;
       width: 340px;
       height: 40px;
       margin: 0;
-      padding: 0 0 0 50px; 
+      padding: 0 0 0 50px;
     }
 
     .moon {
       position: absolute;
       top: 50%;
-      left: 73%;        
+      left: 73%;
     }
   </style>
 </head>
 
 <body>
+  <div>
+    <h4 class="label">credit card details</h4>
+  </div>
   <div class="card">
-    <form action="form_result.html"></form>
-    <div>
-      <h4 class="label">credit card details</h4>
-    </div>
     <div class="item1"><label for="card number">Card number</label></div>
     <div class="item2"><input type="text" name="card number" id="card number" class="info"
-        placeholder="1234 5678 9012 3456"></div>
+        placeholder=" 1234 5678 9012 3456"></div>
     <div class="item3"><label for="card number">Name on card</label></div>
-    <div class="item4"><input type="text" name="card name" id="card name" class="info" placeholder="Name Surname"></div>
-
+    <div class="item4"><input type="text" name="card name" id="card name" class="info" placeholder=" Name Surname">
+    </div>
     <div class="item5"><label for="card date">Expiry Date</label></div>
-    <div class="item7"><input type="text" name="card date" id="card date" class="place" placeholder="02"></div>
-    <div class="item8"><input type="text" name="card date" id="card date" class="place" placeholder="2017"></div>
+    <div class="item7"><input type="text" name="card date" id="card date" class="place" placeholder=" 02"></div>
+    <div class="item8"><input type="text" name="card date" id="card date" class="place" placeholder=" 2017"></div>
     <div class="item6"><label for="card cvv">CVV/CVN</label></div>
-    <div class="item9"><input type="text" name="card cvv" id="card cvv" class="place" placeholder="***"></div>
+    <div class="item9"><input type="text" name="card cvv" id="card cvv" class="place" placeholder=" ***"></div>
     <div class="moon"><img src="icons/moon_flag.png" width="200" alt="moon"></div>
+
   </div>
 </body>
 
