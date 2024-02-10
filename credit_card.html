@@ -9,7 +9,7 @@
   <style>
     .card {
       display: grid;
-      grid-template-columns: 350px;
+      grid-template-columns: 150px 150px 150px;
       grid-template-rows: repeat(9, 1fr);
       margin: 0 auto;
       position: absolute;
@@ -22,32 +22,60 @@
       gap: 5px;
     }
 
-    .card_view {
-      color: gray;
+    .item1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+    }
+
+    .item2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      /* color: gray;
       opacity: 0.6;
-      margin: 0 10px;
+      margin: 0 10px; */
 
     }
 
-    .info {
-      background-color: #afcccc;
-      height: 30px;
-      margin: 0 10px;
-      border: 1px outset #b7d1d1;
+    .item3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
     }
 
-    .card_info {
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 5px;
+    .item4 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 4;
     }
-    .place {
-      background-color: #afcccc;
-      height: 30px;
-      margin: 0 10px;
-      border: 1px outset #b7d1d1;
-      width: 60px;
+
+    .item5 {
+      grid-row-start: 5;
+    }
+
+    .item6 {
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 5;
+    }
+
+    .item7 {
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 6;
+    }
+
+    .item8 {
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 6;
+    }
+
+    .item9 {
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 6;
     }
   </style>
 </head>
@@ -55,21 +83,18 @@
 <body>
   <div class="card">
     <form action="form_result.html"></form>
-    <label class="card_view" for="card number">Card number</label>
-    <input type="text" name="card number" id="card number" class="info" placeholder="1234 5678 9012 3456">
-    <label class="card_view" for="card number">Name on card</label>
-    <input type="text" name="card name" id="card name" class="info" placeholder="Name Surname">
-    <div class="card_info">
-      <label class="card_view" for="card date">Expiry Date</label>
-      <input type="text" name="card date" id="card date" class="place" placeholder="02">
-      <label class="card_view" for="card cvv">CVV/CVN</label>
-      <input type="text" name="card date" id="card date" class="place" placeholder="2017">
-      <input type="text" name="card cvv" id="card cvv" class="place" placeholder="***">
-    </div>
+    <div class="item1"><label for="card number">Card number</label></div>
+    <div class="item2"><input type="text" name="card number" id="card number" class="info"
+        placeholder="1234 5678 9012 3456"></div>
+    <div class="item3"><label for="card number">Name on card</label></div>
+    <div class="item4"><input type="text" name="card name" id="card name" class="info" placeholder="Name Surname"></div>
 
-
+    <div class="item5"><label for="card date">Expiry Date</label></div>
+    <div class="item7"><input type="text" name="card date" id="card date" class="place" placeholder="02"></div>
+    <div class="item8"><input type="text" name="card date" id="card date" class="place" placeholder="2017"></div>
+    <div class="item6"><label for="card cvv">CVV/CVN</label></div>
+    <div class="item9"><input type="text" name="card cvv" id="card cvv" class="place" placeholder="***"></div>
   </div>
-
 </body>
 
 </html>
