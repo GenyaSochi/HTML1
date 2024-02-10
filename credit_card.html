@@ -9,7 +9,7 @@
   <style>
     .card {
       display: grid;
-      grid-template-columns: 100px 100px 100px 100px 100px;
+      grid-template-columns: repeat(5, 100px);
       grid-template-rows: repeat(9, 1fr);
       margin: 0 auto;
       position: absolute;
@@ -26,17 +26,14 @@
     .item1 {
       display: grid;
       align-items: end;
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 3;
+      grid-column-start: 1;  
       grid-row-end: 4;
       font-size: small;
       opacity: 0.4;
     }
 
     .item2 {
-      grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-start: 1;  
       grid-row-start: 4;
       color: #b7d1d1;
       opacity: 0.4;
@@ -51,8 +48,7 @@
     .item3 {
       display: grid;
       align-items: end;
-      grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-start: 1; 
       grid-row-start: 5;
       font-size: small;
       opacity: 0.4;
@@ -60,7 +56,6 @@
 
     .item4 {
       grid-column-start: 1;
-      grid-column-end: 3;
       grid-row-start: 6;
       color: #b7d1d1;
       opacity: 0.4;
@@ -84,16 +79,14 @@
     .item6 {
       display: grid;
       align-items: end;
-      grid-column-start: 3;
-      grid-column-end: 3;
+      grid-column-start: 3;    
       grid-row-start: 7;
       font-size: small;
       opacity: 0.4;
     }
 
     .item7 {
-      grid-column-start: 1;
-      grid-column-end: 1;
+      grid-column-start: 1;    
       grid-row-start: 8;
       opacity: 0.4;
     }
@@ -107,7 +100,6 @@
 
     .item8 {
       grid-column-start: 2;
-      grid-column-end: 2;
       grid-row-start: 8;
       opacity: 0.4;
     }
@@ -120,8 +112,7 @@
     }
 
     .item9 {
-      grid-column-start: 3;
-      grid-column-end: 3;
+      grid-column-start: 3;     
       grid-row-start: 8;
       opacity: 0.4;
     }
@@ -134,12 +125,13 @@
     }
 
     .label {
-      display: grid;
+      display: flex; 
+      flex: none;   
       align-items: center;
-      position: absolute;
+      position: fixed;
       z-index: 1;
       top: 24%;
-      right: 62%;
+      right: 58%;
       background-color: #c06a34;
       color: white;
       text-transform: uppercase;
