@@ -10,7 +10,7 @@
     .container {
       background-color: #f5f5f5;
       width: 800px;
-      height: 500px;
+      height: 600px;
       padding: 20px;
     }
 
@@ -109,6 +109,12 @@
       height: 40px;
       border-radius: 50%;
     }  
+    .input_area {       
+      width: 400px;
+      height: 100px;
+      opacity: 0.4;
+    }
+
 
 
   </style>
@@ -133,8 +139,8 @@
       radio buttons
     </h3>
     <label for="gender">Gender:</label>
-    <input type="radio" name="gender" id="gender1"><label for="gender1">Male</label>
-    <input type="radio" name="gender" id="gender2"><label for="gender2">Female</label>
+    <input type="radio" name="gender" id="gender"><label for="gender">Male</label>
+    <input type="radio" name="gender" id="gender"><label for="gender">Female</label>
     <h3>
       buttons
     </h3>
@@ -148,8 +154,7 @@
     <h3>
       text area
     </h3>
-    <input type="text" name="comment">
-
+    <input class="input_area" type="text" name="comment" placeholder="Enter some text...">
   </div>
 
 </body>
