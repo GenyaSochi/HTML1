@@ -59,12 +59,10 @@
 
     input#gender {
       color: #6db051;
-
     }
 
     .input_radio {
       background-color: #6db051;
-
     }
 
     button {
@@ -108,14 +106,87 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-    }  
-    .input_area {       
+    }
+
+    .input_area {
       width: 400px;
       height: 100px;
       opacity: 0.4;
     }
 
+    .cb1 {
+      display:inline-block;
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background-color: #6db051;
+    }
+    .cb1_input, .cb2_input {
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    .cb1_slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:white;
+      border: 1px solid #6db051;      
+    }
+    .cb1_slider::before {
+      content: "";
+      position: absolute;
+      cursor: pointer;  
+      left: 4px;     
+      bottom: 4px;
+      width: 26px;
+      height: 20px;
+      background-color: #6db051;
+      border-radius: 3px;
+    }
+    .cb1_input:checked + .cb1_slider {
+      background-color:#4a7937
+    }
+    .cb2 {
+      display:inline-block;
+      position: relative;
+      width: 60px;
+      height: 30px;
+      background-color:#c44564;
+    }
 
+    .cb2_slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:white;
+      border: 1px solid #c44564;      
+    }
+    .cb2_slider::before {
+      content: "";
+      position: absolute;
+      cursor: pointer;  
+      left: 4px;     
+      bottom: 4px;
+      width: 26px;
+      height: 20px;
+      background-color:#c44564;
+      border-radius: 3px;
+    }
+    .cb2_input:checked + .cb2_slider {
+      background-color:#812c41
+    }
+    .subscribe {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   </style>
 </head>
 
@@ -132,8 +203,14 @@
     <h3>
       check boxes
     </h3>
-    <input class="cb1_input" type="checkbox" id="cb1"><label for="cb1">Subscribe</label>
-    <input type="checkbox" id="cb2"><label for="cb2">Subscribe</label>
+    <label class="cb1"><span class="subscribe">Subscribe</span>
+      <input class="cb1_input" type="checkbox" id="cb1">
+      <span class="cb1_slider"></span>    
+    </label>
+    <label class="cb2"><span class="subscribe">Subscribe</span>
+      <input class="cb2_input" type="checkbox" id="cb2">
+      <span class="cb2_slider"></span>
+    </label>
     <h3>
       radio buttons
     </h3>
