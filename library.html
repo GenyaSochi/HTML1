@@ -16,20 +16,20 @@
 
     h3 {
       text-transform: capitalize;
-      padding: 10px 0 10px 0;
+      padding: 40px 0 10px 0;
       margin: 0;
     }
 
     .img_valid {
       position: absolute;
       left: 27%;
-      top: 8%;
+      top: 12%;
     }
 
     .img_invalid {
       position: absolute;
       left: 41%;
-      top: 8%;
+      top: 12%;
     }
 
     .input1 {
@@ -57,13 +57,60 @@
       padding: 0 0 0 15px;
     }
 
-    .cb1_input {
-
-      box-sizing: border-box;
-      background-color: #6db051;
-
+    input#gender {
+      color: #6db051;
 
     }
+
+    .input_radio {
+      background-color: #6db051;
+
+    }
+
+    button {
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    .button_active {
+      background-color: #6db051;
+    }
+
+    .button_hover {
+      background-color: #4a7937;
+    }
+
+    .button_danger {
+      background-color: #c44564;
+    }
+
+    .button_hover {
+      background-color: #812c41;
+    }
+
+    .button_disabled {
+      background-color: #808080;
+    }
+
+    .button_plus {
+      background-color: #6db051;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .button_minus {
+      background-color: #c44564;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }  
+
+
   </style>
 </head>
 
@@ -72,26 +119,36 @@
     <h3>
       inputs
     </h3>
-    <form action="">
-      <input class="input1" type="text" placeholder="Enter some text">
-      <input class="input2" type="text" placeholder="valid text"><img class="img_valid" src="icons/valid.png" width="14"
-        alt="green check">
-      <input class="input3" type="text" placeholder="invalid text"><img class="img_invalid" src="icons/invalid.png"
-        width="14" alt="red cross">
-    </form>
+    <input class="input1" type="text" placeholder="Enter some text">
+    <input class="input2" type="text" placeholder="valid text"><img class="img_valid" src="icons/valid.png" width="14"
+      alt="green check">
+    <input class="input3" type="text" placeholder="invalid text"><img class="img_invalid" src="icons/invalid.png"
+      width="14" alt="red cross">
     <h3>
       check boxes
     </h3>
-    <form action="">
-      <input class="cb1_input" type="checkbox" id="cb1"><label for="cb1">Subscribe</label>
-      <input type="checkbox" id="cb2"><label for="cb2">Subscribe</label>
-    </form>
+    <input class="cb1_input" type="checkbox" id="cb1"><label for="cb1">Subscribe</label>
+    <input type="checkbox" id="cb2"><label for="cb2">Subscribe</label>
     <h3>
       radio buttons
     </h3>
     <label for="gender">Gender:</label>
-    <input type="radio" name="Male" id="gender">
-
+    <input type="radio" name="gender" id="gender1"><label for="gender1">Male</label>
+    <input type="radio" name="gender" id="gender2"><label for="gender2">Female</label>
+    <h3>
+      buttons
+    </h3>
+    <button class="button_active">active</button>
+    <button class="button_hover">hover</button>
+    <button class="button_danger">danger</button>
+    <button class="button_hover">hover</button>
+    <button class="button_disabled">disabled</button>
+    <button class="button_plus">+</button>
+    <button class="button_minus">-</button>
+    <h3>
+      text area
+    </h3>
+    <input type="text" name="comment">
 
   </div>
 
