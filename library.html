@@ -166,7 +166,7 @@
       right: 0;
       bottom: 0;
       background-color:white;
-      border: 1px solid #c44564;      
+      border: 1px solid #c44564;         
     }
     .cb2_slider::before {
       content: "";
@@ -186,7 +186,14 @@
       position: absolute;
       top: 10%;
       left: 150%;
+      padding-left: 40px; 
     }
+    .radio {
+      accent-color:  #6db051;
+     /* border:#6db051 1px solid; */
+    }
+
+
   </style>
 </head>
 
@@ -203,20 +210,22 @@
     <h3>
       check boxes
     </h3>
-    <label class="cb1"><span class="subscribe">Subscribe</span>
+    <label class="cb1" for="cb1">
       <input class="cb1_input" type="checkbox" id="cb1">
       <span class="cb1_slider"></span>    
+      <span class="subscribe">Subscribe</span>
     </label>
-    <label class="cb2"><span class="subscribe">Subscribe</span>
+    <label class="cb2" for="cb2">
       <input class="cb2_input" type="checkbox" id="cb2">
       <span class="cb2_slider"></span>
+      <span class="subscribe">Subscribe</span>
     </label>
     <h3>
       radio buttons
     </h3>
     <label for="gender">Gender:</label>
-    <input type="radio" name="gender" id="gender"><label for="gender">Male</label>
-    <input type="radio" name="gender" id="gender"><label for="gender">Female</label>
+    <input class="radio" type="radio" name="gender" id="gender" value="gender"><label for="gender">Male</label>
+    <input class="radio" type="radio" name="gender" id="gender" value="gender"><label for="gender">Female</label>
     <h3>
       buttons
     </h3>
