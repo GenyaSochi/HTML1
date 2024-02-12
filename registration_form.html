@@ -11,94 +11,193 @@
       max-width: 900px;
       background-color: #f5f5f5;
       display: grid;
-      grid-template-columns: repeat(4, 250px 100px);
-      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: repeat(5, 280px 80px);
+      grid-template-rows: repeat(9, 1fr);
       margin: 0 auto;
       padding: 20px;
     }
 
     .item1 {
       grid-column-start: 1;
-      grid-column-end: 2;
       grid-row-end: 1;
-      margin: ;
     }
 
     .item2 {
       grid-column-start: 3;
-      grid-column-end: 4;
       grid-row-end: 1;
     }
 
     .item3 {
       grid-column-start: 1;
-      grid-column-end: 2;
       grid-row-end: 2;
-      
     }
 
-    .item4 { 
+    .item4 {
+      display: grid;
+      align-items: end;
       grid-column-start: 1;
-      grid-column-end: 2;
       grid-row-end: 2;
       padding: 0 0 0 40px;
-      margin: 0;      
+      margin: 0;
     }
 
     .item5 {
+      display: grid;
+      align-items: end;
       grid-column-start: 3;
-      grid-column-end: 4;
       grid-row-end: 2;
-      margin: 0;   
+      margin: 0;
     }
 
     .item6 {
+      display: grid;
+      align-items: end;
       grid-column-start: 4;
-      grid-column-end: 5;
       grid-row-end: 2;
-      margin: 0; 
+      margin: 0;
     }
 
-    .item7 {}
-
-    .item8 {}
-
-    h2 {      
-      text-transform: capitalize;       
+    .item7 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 1;
+      grid-row-end: 4;
+      margin: 0;
     }
+
+    .item8 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 1;
+      grid-row-end: 4;
+      padding: 0 0 0 40px;
+      margin: 0;
+    }
+
+    .item9 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 3;
+      grid-row-end: 4;
+      margin: 0;
+    }
+
+    .item10 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 4;
+      grid-row-end: 4;
+      margin: 0;
+    }
+
+    .item11 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 1;
+      grid-row-end: 6;
+      margin: 0;
+    }
+    .item12 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 1;
+      grid-row-end: 6;
+      padding: 0 0 0 40px;
+      margin: 0;
+      text-transform: capitalize;
+      opacity: 0.4;
+    }
+    .item13 {
+      display: grid;
+      align-items: end;
+      grid-column-start: 1;
+      grid-row-end: 6;
+      margin: 0;
+      padding: 0 0 0 200px;
+      text-transform: capitalize;
+      opacity: 0.4;
+    }
+    .item14 {
+      grid-column-start: 1;
+      grid-row-end: 8;     
+      margin-left: 8px;
+      text-transform: capitalize;
+      opacity: 0.4;
+      width: 14px; 
+    }
+    .item16 {
+      grid-column-start: 1;
+      grid-row-end: 9;     
+      margin-left: 8px;
+      text-transform: capitalize;
+      opacity: 0.4;
+      width: 14px; 
+    }
+
+    h2 {
+      text-transform: capitalize;
+    }
+
     .hr_username {
       margin: 0;
-      width: 260px;
+      width: 282px;
     }
+
     .hr_lastname {
       margin: 0;
-      width: 200px;
+      width: 246px;
+    }
+
+    .hr_password {
+      margin: 0;
+      width: 130px;
     }
 
     .span_h2 {
       text-transform: none;
     }
+
     .span_username {
       text-transform: capitalize;
-      opacity: 0.4;  
+      opacity: 0.4;
     }
   </style>
 </head>
 
 <body>
+  <form action="">
   <div class="container">
     <h2 class="item1">registration <span class="span_h2">form</span></h2>
     <h2 class="item2">personal <span class="span_h2">detalis</span></h2>
-    <img class="item3" src="icons/username.png" width="28" alt="men">    
-    <h4 class="item4"><span class="span_username">username</span><hr class="hr_username"></h4>
-    <h4 class="item5"><span class="span_username">first name</span><hr class="hr_lastname"></h4> 
-    <h4 class="item6"><span class="span_username">last name</span><hr class="hr_lastname"></h4>
-    
-
-
-
-
+    <img class="item3" src="icons/username.png" width="28" alt="men">
+    <h4 class="item4"><span class="span_username">username</span>
+      <hr class="hr_username">
+    </h4>
+    <h4 class="item5"><span class="span_username">first name</span>
+      <hr class="hr_lastname">
+    </h4>
+    <h4 class="item6"><span class="span_username">last name</span>
+      <hr class="hr_lastname">
+    </h4>
+    <img class="item7" src="icons/email.png" width="28" alt="email">
+    <h4 class="item8"><span class="span_username">email address</span>
+      <hr class="hr_username">
+    </h4>
+    <h4 class="item9">Mail
+      <hr class="hr_lastname">
+    </h4>
+    <h4 class="item10">mm/dd/yyyy
+      <hr class="hr_lastname">
+    </h4>
+    <img class="item11" src="icons/pswd.png" width="28" alt="castle">
+    <h4 class="item12">password <hr class="hr_password"></h4>
+    <h4 class="item13">confirmpassword<hr class="hr_password"></h4>
+    <input class="item14" type="checkbox" name="want" id="want">
+    <label for="want">i want to receive mews and special offers</label>
+    <input class="item16" type="checkbox" name="agree" id="agree">
+    <label for="agree">i agree</label>
   </div>
+</form>
 
 </body>
 
