@@ -21,6 +21,7 @@
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-end: 1;
+      margin: ;
     }
 
     .item2 {
@@ -33,36 +34,53 @@
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-end: 2;
+      
     }
 
-    .item4 {
+    .item4 { 
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-end: 2;
-      padding: 15px 0 0 60px;
-      margin: 0;
-      text-transform: capitalize;
+      padding: 0 0 0 40px;
+      margin: 0;      
     }
 
     .item5 {
-   
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-end: 2;
+      margin: 0;   
     }
 
-    .item6 {}
+    .item6 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-end: 2;
+      margin: 0; 
+    }
 
     .item7 {}
 
     .item8 {}
 
-    h2 {
-      text-transform: capitalize;
+    h2 {      
+      text-transform: capitalize;       
     }
-    hr {
-      width: 288px;
+    .hr_username {
+      margin: 0;
+      width: 260px;
+    }
+    .hr_lastname {
+      margin: 0;
+      width: 200px;
     }
 
     .span_h2 {
       text-transform: none;
+    }
+    .span_username {
+      text-transform: capitalize;
+      opacity: 0.4;  
     }
   </style>
 </head>
@@ -71,8 +89,10 @@
   <div class="container">
     <h2 class="item1">registration <span class="span_h2">form</span></h2>
     <h2 class="item2">personal <span class="span_h2">detalis</span></h2>
-    <img class="item3" src="icons/username.png" alt="men">    
-    <h4 class="item4">username <hr></h4>
+    <img class="item3" src="icons/username.png" width="28" alt="men">    
+    <h4 class="item4"><span class="span_username">username</span><hr class="hr_username"></h4>
+    <h4 class="item5"><span class="span_username">first name</span><hr class="hr_lastname"></h4> 
+    <h4 class="item6"><span class="span_username">last name</span><hr class="hr_lastname"></h4>
     
 
 
