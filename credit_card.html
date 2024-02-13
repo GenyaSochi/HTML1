@@ -11,22 +11,26 @@
       display: grid;
       grid-template-columns: repeat(5, 100px);
       grid-template-rows: repeat(9, 1fr);
-      margin: 0 auto;
-      position: absolute;
+      margin: 200px auto;
+      
       max-width: 520px;
       height: 342px;
       background-color: #afcccc;
       border-radius: 10px;
-      top: 20%;
-      right: 50%;
       padding: 10px;
-      overflow: hidden;
+      background: #afcccc url(icons/moon_flag.png) 117% 105%/200px 200px no-repeat;
+    }
+
+    .item0 {
+      grid-column-start: 1;
+      grid-row-end: 3;
+      transform: translate(-40px,-15px);
     }
 
     .item1 {
       display: grid;
       align-items: end;
-      grid-column-start: 1;  
+      grid-column-start: 1;
       grid-row-end: 4;
       font-size: small;
       opacity: 0.4;
@@ -34,7 +38,7 @@
     }
 
     .item2 {
-      grid-column-start: 1;  
+      grid-column-start: 1;
       grid-row-start: 4;
       color: #b7d1d1;
       opacity: 0.4;
@@ -49,7 +53,7 @@
     .item3 {
       display: grid;
       align-items: end;
-      grid-column-start: 1; 
+      grid-column-start: 1;
       grid-row-start: 5;
       font-size: small;
       opacity: 0.4;
@@ -82,7 +86,7 @@
     .item6 {
       display: grid;
       align-items: end;
-      grid-column-start: 3;    
+      grid-column-start: 3;
       grid-row-start: 7;
       font-size: small;
       opacity: 0.4;
@@ -90,7 +94,7 @@
     }
 
     .item7 {
-      grid-column-start: 1;    
+      grid-column-start: 1;
       grid-row-start: 8;
       opacity: 0.4;
     }
@@ -116,7 +120,7 @@
     }
 
     .item9 {
-      grid-column-start: 3;     
+      grid-column-start: 3;
       grid-row-start: 8;
       opacity: 0.4;
     }
@@ -129,13 +133,9 @@
     }
 
     .label {
-      display: flex; 
-      flex: none;   
+      display: flex;
+      flex: none;
       align-items: center;
-      position: fixed;
-      z-index: 1;
-      top: 24%;
-      right: 58%;
       background-color: #c06a34;
       color: white;
       text-transform: uppercase;
@@ -154,10 +154,10 @@
 </head>
 
 <body>
-  <div>
-    <h4 class="label">credit card details</h4>
-  </div>
   <div class="card">
+    <div class="item0">
+      <h4 class="label">credit card details</h4>
+    </div>
     <div class="item1"><label for="card_number">Card number</label></div>
     <div class="item2"><input type="text" name="card_number" id="card_number" class="info"
         placeholder=" 1234 5678 9012 3456"></div>
@@ -169,7 +169,6 @@
     <div class="item8"><input type="text" name="card_year" id="card_year" class="place" placeholder=" 2017"></div>
     <div class="item6"><label for="card_cvv">CVV/CVN</label></div>
     <div class="item9"><input type="text" name="card_cvv" id="card_cvv" class="place" placeholder=" ***"></div>
-    <div class="moon"><img src="icons/moon_flag.png" width="200" alt="moon"></div>
   </div>
   <p><a href="index.html">Back</a></p>
 </body>

@@ -22,14 +22,14 @@
 
     .img_valid {
       position: absolute;
-      left: 19%;
-      top: 12%;
+      right: 10px;
+      top: 10px;
     }
 
     .img_invalid {
       position: absolute;
-      left: 29%;
-      top: 12%;
+      right: 10px;
+      top: 8px;
     }
 
     .input1 {
@@ -150,6 +150,9 @@
     .cb1_input:checked + .cb1_slider {
       background-color:#4a7937
     }
+    .cb1_input:checked + .cb1_slider::before {
+      left: 25px;     
+    }
     .cb2 {
       display:inline-block;
       position: relative;
@@ -182,11 +185,14 @@
     .cb2_input:checked + .cb2_slider {
       background-color:#812c41
     }
+    .cb2_input:checked + .cb2_slider::before {
+      left: 25px;     
+    }
     .subscribe {
       position: absolute;
-      top: 10%;
-      left: 150%;
-      padding-left: 40px; 
+      top: 5px;
+      left: 30px;
+      padding-left: 40px;
     }
     .radio {
       accent-color:  #6db051;
@@ -203,29 +209,37 @@
       inputs
     </h3>
     <input class="input1" type="text" placeholder="Enter some text">
-    <input class="input2" type="text" placeholder="valid text"><img class="img_valid" src="icons/valid.png" width="14"
-      alt="green check">
-    <input class="input3" type="text" placeholder="invalid text"><img class="img_invalid" src="icons/invalid.png"
-      width="14" alt="red cross">
+    <div style="display: inline-block; position: relative;">
+      <input class="input2" type="text" placeholder="valid text">
+      <img class="img_valid" src="icons/valid.png" width="14" alt="green check">
+    </div>
+    <div style="display: inline-block; position: relative;">
+      <input class="input3" type="text" placeholder="invalid text">
+      <img class="img_invalid" src="icons/invalid.png" width="14" alt="red cross">
+    </div>
     <h3>
       check boxes
     </h3>
-    <label class="cb1" for="cb1">
-      <input class="cb1_input" type="checkbox" id="cb1">
-      <span class="cb1_slider"></span>    
-      <span class="subscribe">Subscribe</span>
-    </label>
-    <label class="cb2" for="cb2">
-      <input class="cb2_input" type="checkbox" id="cb2">
-      <span class="cb2_slider"></span>
-      <span class="subscribe">Subscribe</span>
-    </label>
+    <div style="display: inline-block; width: 140px;">
+      <label class="cb1" for="cb1">
+        <input class="cb1_input" type="checkbox" id="cb1">
+        <span class="cb1_slider"></span>    
+        <span class="subscribe">Subscribe</span>
+      </label>
+    </div>
+    <div style="display: inline-block;">
+      <label class="cb2" for="cb2">
+        <input class="cb2_input" type="checkbox" id="cb2">
+        <span class="cb2_slider"></span>
+        <span class="subscribe">Subscribe</span>
+      </label>
+    </div>
     <h3>
       radio buttons
     </h3>
     <label for="gender">Gender:</label>
-    <input class="radio" type="radio" name="gender" id="gender" value="gender"><label for="gender">Male</label>
-    <input class="radio" type="radio" name="gender" id="gender" value="gender"><label for="gender">Female</label>
+    <input class="radio" type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+    <input class="radio" type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
     <h3>
       buttons
     </h3>
@@ -239,7 +253,7 @@
     <h3>
       text area
     </h3>
-    <input class="input_area" type="text" name="comment" placeholder="Enter some text...">
+    <textarea class="input_area" type="text" name="comment" placeholder="Enter some text..."></textarea>
   </div>
   <p><a href="index.html">Back</a></p>
 
