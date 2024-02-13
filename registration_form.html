@@ -97,6 +97,7 @@
       grid-row-end: 6;
       margin: 0;
     }
+
     .item12 {
       display: grid;
       align-items: end;
@@ -107,6 +108,7 @@
       text-transform: capitalize;
       opacity: 0.4;
     }
+
     .item13 {
       display: grid;
       align-items: end;
@@ -117,29 +119,21 @@
       text-transform: capitalize;
       opacity: 0.4;
     }
-    .item14 {
+
+    .item14 {    
       grid-column-start: 1;
-      grid-row-end: 8;     
+      grid-row-end: 8;
       margin-left: 8px;
       text-transform: capitalize;
-      opacity: 0.4;
-      width: 14px; 
+      width: 320px;
     }
+
     .item15 {
-      grid-column-start: ;
-      grid-row-end: 9;     
-      margin-left: 8px;
-      text-transform: capitalize;
-      opacity: 0.4;
-      width: 14px; 
-    }
-    .item16 {
       grid-column-start: 1;
-      grid-row-end: 9;     
+      grid-row-end: 9;
       margin-left: 8px;
-      text-transform: capitalize;
-      opacity: 0.4;
-      width: 14px; 
+      text-transform: capitalize;     
+      width: 320px;
     }
 
     h2 {
@@ -160,6 +154,11 @@
       margin: 0;
       width: 130px;
     }
+    .hr_agree {
+      margin: 0;
+      width: 900px;
+      opacity: 0.4;      
+    }
 
     .span_h2 {
       text-transform: none;
@@ -169,48 +168,71 @@
       text-transform: capitalize;
       opacity: 0.4;
     }
+
     input {
       text-decoration: none;
+    }
+    .button {
+      display: grid;
+      grid-column-start: 5;
+      grid-row-end: 10;     
+    }
+    .button_view {      
+      background-color: #508a8a;
+      color: white;
+      width: 120px;
+      height: 30px;
+      text-transform: uppercase;
     }
   </style>
 </head>
 
 <body>
   <form action="#">
-  <div class="container">
-    <!-- <input type="text"> -->
-    <h2 class="item1">registration <span class="span_h2">form</span></h2>
-    <h2 class="item2">personal <span class="span_h2">detalis</span></h2>
-    <img class="item3" src="icons/username.png" width="28" alt="men">
-    <h4 class="item4"><span class="span_username">username</span>
-      <hr class="hr_username">
-    </h4>
-    <h4 class="item5"><span class="span_username">first name</span>
-      <hr class="hr_lastname">
-    </h4>
-    <h4 class="item6"><span class="span_username">last name</span>
-      <hr class="hr_lastname">
-    </h4>
-    <img class="item7" src="icons/email.png" width="28" alt="email">
-    <h4 class="item8"><span class="span_username">email address</span>
-      <hr class="hr_username">
-    </h4>
-    <h4 class="item9">Mail
-      <hr class="hr_lastname">
-    </h4>
-    <h4 class="item10">mm/dd/yyyy
-      <hr class="hr_lastname">
-    </h4>
-    <img class="item11" src="icons/pswd.png" width="28" alt="castle">
-    <h4 class="item12">password <hr class="hr_password"></h4>
-    <h4 class="item13">confirmpassword<hr class="hr_password"></h4>
-    <input class="item14" type="checkbox" name="want" id="want">
-    <label for="want">i want to receive mews and special offers</label>
-    <input class="item16" type="checkbox" name="agree" id="agree">
-    <label for="agree">i agree with the Terms and Conditions</label>
-  
-  </div>
-</form>
+    <div class="container">
+      <!-- <input type="text"> -->
+      <h2 class="item1">registration <span class="span_h2">form</span></h2>
+      <h2 class="item2">personal <span class="span_h2">detalis</span></h2>
+      <img class="item3" src="icons/username.png" width="28" alt="men">
+      <h4 class="item4"><span class="span_username">username</span>
+        <hr class="hr_username">
+      </h4>
+      <h4 class="item5"><span class="span_username">first name</span>
+        <hr class="hr_lastname">
+      </h4>
+      <h4 class="item6"><span class="span_username">last name</span>
+        <hr class="hr_lastname">
+      </h4>
+      <img class="item7" src="icons/email.png" width="28" alt="email">
+      <h4 class="item8"><span class="span_username">email address</span>
+        <hr class="hr_username">
+      </h4>
+      <h4 class="item9">Mail
+        <hr class="hr_lastname">
+      </h4>
+      <h4 class="item10">mm/dd/yyyy
+        <hr class="hr_lastname">
+      </h4>
+      <img class="item11" src="icons/pswd.png" width="28" alt="castle">
+      <h4 class="item12">password
+        <hr class="hr_password">
+      </h4>
+      <h4 class="item13">confirmpassword
+        <hr class="hr_password">
+      </h4>
+      <div class="item14">
+        <input type="checkbox" name="want" id="want">
+        <label for="want">i want to receive mews and special offers</label>
+      </div>
+      <div class="item15">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">i agree with the Terms and Conditions</label>
+        <hr class="hr_agree">  
+      </div>
+      <div class="button"><input class="button_view" type="submit" value="submit"></div>
+
+    </div>
+  </form>
 
 </body>
 
