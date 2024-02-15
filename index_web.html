@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index_web</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 1200px;
+      height: 800px;
+      margin: 0;
+      background-image: url(icons/NewYork.jpg);
+    }
+
+    .menu {
+      text-transform: uppercase;
+      color: white;
+      font-size: 20px;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .menu:hover {
+      color: #e9dc3e;
+    }
+
+    ul {
+      width: 98px;
+      margin: 0;
+      padding: 0 0 20px 20px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: black;
+      list-style-type: none;
+      overflow: hidden;
+      transition: 1s;
+      font-size: 16px;
+    }
+
+    ul:hover {
+      width: 280px;
+      transition: 1s;
+    }
+
+    li {
+      text-transform: uppercase;
+      color: white;
+      padding: 0 0 60px 100px;
+    }
+
+    li:hover {
+      /* color: #c20382; */
+      color: #e9dc3e;
+    }
+
+    ul a {
+      font-size: 20px;
+      /* color: rgb(176, 25, 25); */
+      text-decoration: none;
+      display: block;
+      padding: 10px 0 10px 80px;
+      transition: 1s;
+    }
+
+    .harley {
+      top: 50px;
+      left: 250px;
+      position: relative;
+      z-index: -1;
+      /* transform: perspective(250px) rotateZ(45%); */
+    }
+
+    .djoker {
+      top: 12px;
+      left: 1108px;
+      position: relative;
+    }
+
+    .dead {
+      top: -652px;
+      left: 1490px;
+      position: relative;
+    }
+
+    img {
+      border-radius: 30px;
+      border: white 10px solid;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav>
+      <ul>
+        <li class="menu">menu</li>
+        <li><a href="#"></a>home work</li>
+
+        <li><a href="#"></a>practical work</li>
+        <li><a href="#"></a>class work</li>
+      </ul>
+    </nav>
+    <div class="harley">
+      <img src="icons/HK.jpg" width="260" alt="">
+    </div>
+    <div class="djoker">
+      <img src="icons/Dj.jpg" width="260" alt="">
+    </div>
+    <div class="dead">
+      <img src="icons/DS.jpg" width="260" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
