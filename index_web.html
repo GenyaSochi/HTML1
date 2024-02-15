@@ -71,11 +71,16 @@
     }
 
     .harley {
-      top: 50px;
-      left: 250px;
+      top: 25px;
+      left: 138px;
       position: absolute;
       perspective: 1000px;
-      
+    }
+
+    .harley img {
+      border-radius: 30px;
+      border: white 10px solid;
+      transform: rotateY(30deg);
     }
 
     .djoker {
@@ -84,16 +89,36 @@
       position: absolute;
     }
 
+    .djoker img {
+      border-radius: 30px;
+      border: white 10px solid;
+      transform: rotateY(-30deg);
+    }
+
     .dead {
-      top: 426px;
-      left: 135px;
+      top: 329px;
+      left: 1375px;
+      position: absolute;
+      perspective: 1000px;
+    }
+
+    .dead img {
+      border-radius: 30px;
+      border: white 10px solid;
+      transform: rotateY(-30deg);
+
+    }
+
+    .harley_dj {
+      top: 575px;
+      left: 665px;
       position: absolute;
     }
 
-    img {
+    .harley_dj img {
       border-radius: 30px;
-      border: white 10px solid;
-      transform: rotateY(40deg);   
+      border: white 4px solid;
+      transform: rotateY(9deg);
     }
 
     img:hover {
@@ -108,7 +133,6 @@
     <ul>
       <li class="menu">menu</li>
       <li><a href="#"></a>home work</li>
-
       <li><a href="#"></a>practical work</li>
       <li><a href="#"></a>class work</li>
     </ul>
@@ -122,6 +146,9 @@
     </div>
     <div class="dead">
       <img src="icons/DS.jpg" width="260" alt="">
+    </div>
+    <div class="harley_dj">
+      <img src="icons/HKDj.jpg" width="128" alt="">
     </div>
   </div>
 </body>
