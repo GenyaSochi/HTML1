@@ -26,22 +26,28 @@
       color: #e9dc3e;
     }
 
-    ul {
-      width: 98px;
-      margin: 0;
-      padding: 0 0 20px 20px;
+    nav {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
-      background: black;
-      list-style-type: none;
+      z-index: 1;
       overflow: hidden;
       transition: 1s;
-      font-size: 16px;
+      width: 98px;
     }
 
-    ul:hover {
+    ul {
+      width: 280px;
+      margin: 0;
+      padding: 0 0 20px 20px;
+      background: black;
+      list-style-type: none;
+      font-size: 16px;
+      height: 100%;
+    }
+
+    nav:hover {
       width: 280px;
       transition: 1s;
     }
@@ -67,26 +73,27 @@
     .harley {
       top: 50px;
       left: 250px;
-      position: relative;
-      z-index: -1;
-      /* transform: perspective(250px) rotateZ(45%); */
+      position: absolute;
+      perspective: 1000px;
+      
     }
 
     .djoker {
       top: 12px;
       left: 1108px;
-      position: relative;
+      position: absolute;
     }
 
     .dead {
-      top: -652px;
-      left: 1490px;
-      position: relative;
+      top: 426px;
+      left: 135px;
+      position: absolute;
     }
 
     img {
       border-radius: 30px;
       border: white 10px solid;
+      transform: rotateY(40deg);   
     }
 
     img:hover {
@@ -97,16 +104,16 @@
 </head>
 
 <body>
-  <div>
-    <nav>
-      <ul>
-        <li class="menu">menu</li>
-        <li><a href="#"></a>home work</li>
+  <nav>
+    <ul>
+      <li class="menu">menu</li>
+      <li><a href="#"></a>home work</li>
 
-        <li><a href="#"></a>practical work</li>
-        <li><a href="#"></a>class work</li>
-      </ul>
-    </nav>
+      <li><a href="#"></a>practical work</li>
+      <li><a href="#"></a>class work</li>
+    </ul>
+  </nav>
+  <div>
     <div class="harley">
       <img src="icons/HK.jpg" width="260" alt="">
     </div>
