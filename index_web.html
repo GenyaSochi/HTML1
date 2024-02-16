@@ -145,8 +145,8 @@
     }
     
     .spider {
-      top: 0;
-      left: 1138px;
+      top: -20px;
+      right: 30px;
       position: absolute;  
       animation: spider 2s linear;
     }
@@ -154,10 +154,11 @@
     @keyframes spider {
       from {
         margin-left: 0;
-        transform: rotateZ(20deg);
+        transform: rotateZ(30deg);
       }
       to {
         margin-left: 400px;
+        transform: rotateZ(-30deg);
       }
     }
 
