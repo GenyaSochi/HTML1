@@ -84,15 +84,15 @@
     }
 
     .djoker {
-      top: 12px;
-      left: 1108px;
+      top: 499px;
+      left: 1175px;
       position: absolute;
     }
 
     .djoker img {
-      border-radius: 30px;
+      border-radius: 20px;
       border: white 10px solid;
-      transform: rotateY(-30deg);
+      transform: rotateY(-5deg);
     }
 
     .dead {
@@ -117,14 +117,61 @@
 
     .harley_dj img {
       border-radius: 30px;
-      border: white 4px solid;
+      border: white 8px solid;
       transform: rotateY(9deg);
     }
 
-    img:hover {
-      border: black 10px solid;
-      transition: 2s;
+    .djoker img:hover {
+      border: #d0d3d5 10px solid;
+      transition: transform 2s linear;
+      transform: scale(1.2);     
     }
+
+    .harley_dj img:hover {
+      border: #d0d3d5 10px solid;
+      transition: transform 2s linear;
+      transform: scale(1.2);
+    }
+
+    .dead img:hover {
+      border: #d0d3d5 10px solid;
+      transition: transform 2s linear;
+      animation: move 2s linear 1s both;
+    }
+    .harley img:hover {
+      border: #d0d3d5 10px solid;
+      transition: transform 2s linear;
+      animation: move 2s linear 1s both;
+    }
+    
+    .spider {
+      top: 0;
+      left: 1138px;
+      position: absolute;  
+      animation: spider 2s linear;
+    }
+    
+    @keyframes spider {
+      from {
+        margin-left: 0;
+        transform: rotateZ(20deg);
+      }
+      to {
+        margin-left: 400px;
+      }
+    }
+
+      @keyframes move {
+        from {
+          transform: rotateY(0deg);
+        }
+  
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+  
   </style>
 </head>
 
@@ -142,13 +189,16 @@
       <img src="icons/HK.jpg" width="260" alt="">
     </div>
     <div class="djoker">
-      <img src="icons/Dj.jpg" width="260" alt="">
+      <img src="icons/Dj.jpg" width="118" alt="">
     </div>
     <div class="dead">
       <img src="icons/DS.jpg" width="260" alt="">
     </div>
     <div class="harley_dj">
       <img src="icons/HKDj.jpg" width="128" alt="">
+    </div>
+    <div class="spider">
+      <img src="icons/spider-transformed.png" width="260" alt="">
     </div>
   </div>
 </body>
