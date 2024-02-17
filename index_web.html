@@ -12,6 +12,7 @@
       height: 800px;
       margin: 0;
       background-image: url(icons/NewYork.jpg);
+      overflow: hidden;
     }
 
     .menu {
@@ -147,6 +148,7 @@
       position: absolute;
       animation: spider 7s infinite;
       animation-direction: alternate;
+      overflow: hidden;
     }
 
     .home_work {
@@ -161,14 +163,12 @@
 
     @keyframes spider {
       from {
-        margin-left: 0;
-        transform: rotateZ(30deg);
+        margin-left: 0;   
         transform: translate(-1750px);
       }
 
       to {
-        margin-left: 400px;
-        transform: rotateX(-30deg);
+        margin-left: 400px; 
         transform: translate(280px);
       }
     }
@@ -250,7 +250,7 @@
     </div>
     <div class="harley_dj">
       <img src="icons/HKDj.jpg" width="128" alt="">
-    </div>
+    </div> 
     <div class="spider">
       <img src="icons/spider-transformed.png" width="260" alt="">
     </div>
