@@ -34,7 +34,7 @@
       z-index: 1;
       overflow: hidden;
       transition: 1s;
-      width: 98px;
+      width: 114px;
     }
 
     ul {
@@ -54,19 +54,19 @@
 
     li {
       text-transform: uppercase;
-      color: white;
-      padding: 0 0 60px 100px;
+      color: #ecdb21;
+      padding: 0 0 3px 100px;
     }
 
-    li:hover {
+    /* li:hover {
       color: #e9dc3e;
-    }
+    } */
 
     ul a {
       font-size: 20px;
       text-decoration: none;
       display: block;
-      padding: 10px 0 10px 80px;
+      padding: 0 0 0 80px;
       transition: 1s;
     }
 
@@ -124,11 +124,11 @@
     .djoker img:hover {
       border: #d0d3d5 10px solid;
       transition: transform 2s linear;
-      transform: scale(1.2);     
+      transform: scale(1.2);
     }
 
     .harley_dj img:hover {
-      border:#d0d3d5 10px solid;
+      border: #d0d3d5 10px solid;
       transition: transform 2s linear;
       transform: scale(1.2);
     }
@@ -138,44 +138,54 @@
       transition: transform 2s linear;
       animation: move 2s linear 1s both;
     }
+
     .harley img:hover {
       border: #d0d3d5 10px solid;
       transition: transform 2s linear;
       animation: move 2s linear 1s both;
     }
-    
+
     .spider {
       top: -20px;
       right: 30px;
-      position: absolute;  
-      animation: spider 7s infinite;
-      animation-direction: alternate;
+      position: absolute;
+      /* animation: spider 7s infinite; */
+      /* animation-direction: alternate; */
     }
-    
+
+    .home_work {
+      color: white;
+      font-size: 12px;
+      margin: 0;
+    }
+
+    .home_work:hover {
+      color: #ecdb21;
+    }
+
     @keyframes spider {
       from {
         margin-left: 0;
         transform: rotateZ(30deg);
-        transform: translate(-1750px);         
+        transform: translate(-1750px);
       }
+
       to {
         margin-left: 400px;
         transform: rotateX(-30deg);
-        transform: translate(280px);   
+        transform: translate(280px);
       }
     }
 
-      @keyframes move {
-        from {
-          transform: rotateY(0deg);
-        }
-  
-        to {
-          transform: rotateY(360deg);
-        }
+    @keyframes move {
+      from {
+        transform: rotateY(0deg);
       }
 
-  
+      to {
+        transform: rotateY(360deg);
+      }
+    }
   </style>
 </head>
 
@@ -183,9 +193,53 @@
   <nav>
     <ul>
       <li class="menu">menu</li>
-      <li><a href="#"></a>home work</li>
-      <li><a href="#"></a>practical work</li>
-      <li><a href="#"></a>class work</li>
+      <li>home work</li>
+      <li><i><a class="home_work" href="romeo.html">dz_1.1</a></i></li>
+      <li><i><a class="home_work" href="card_game.html">dz_1.2</a></i></li>
+      <li><i><a class="home_work" href="tutorial.html">dz_1.3</a></i></li>
+      <li><i><a class="home_work" href="fruits.html">dz_2.1</a></i></li>
+      <li><i><a class="home_work" href="list.html">dz_2.2</a></i></li>
+      <li><i><a class="home_work" href="tag.html">dz_2.3</a></i></li>
+      <li><i><a class="home_work" href="tag.html">dz_2.3</a></i></li>
+      <li><i><a class="home_work" href="food.html">dz_3.1</a></i></li>
+      <li><i><a class="home_work" href="menu.html">dz_3.2</a></i></li>
+      <li><i><a class="home_work" href="layout.html">dz_3.3</a></i></li>
+      <li><i><a class="home_work" href="watch.html">dz_4.1</a></i></li>
+      <li><i><a class="home_work" href="door.html">dz_4.2</a></i></li>
+      <li><i><a class="home_work" href="text_img.html">dz_4.3</a></i></li>
+      <li><i><a class="home_work" href="table_scroll.html">dz_5.1</a></i></li>
+      <li><i><a class="home_work" href="side_menu.html">dz_5.2</a></i></li>
+      <li><i><a class="home_work" href="subscription.html">dz_5.3</a></i></li>
+      <li><i><a class="home_work" href="news.html">dz_7.1</a></i></li>
+      <li><i><a class="home_work" href="news.html">dz_7.1</a></i></li>
+      <li><i><a class="home_work" href="chat.html">dz_7.2</a></i></li>
+      <li><i><a class="home_work" href="my_boards.html">dz_7.3</a></i></li>
+      <li><i><a class="home_work" href="sushi.html">dz_10</a></i></li>
+      <li><i><a class="home_work" href="credit_card.html">dz_10.1</a></i></li>
+      <li><i><a class="home_work" href="library.html">dz_10.2</a></i></li>
+      <li>practical work</li>
+      <li><i><a class="home_work" href="practice_1.html">pz_1.1</a></i></li>
+      <li><i><a class="home_work" href="practice_2.html">pz_1.2</a></i></li>
+      <li><i><a class="home_work" href="practice_3.html">pz_1.3</a></i></li>
+      <li><i><a class="home_work" href="seasons.html">pz_2.1</a></i></li>
+      <li><i><a class="home_work" href="contents.html">pz_2.2</a></i></li>
+      <li><i><a class="home_work" href="html_page.html">pz_2.3</a></i></li>
+      <li><i><a class="home_work" href="practice_4.html">pz_3.1</a></i></li>
+      <li><i><a class="home_work" href="computer_programming.html">pz_3.2</a></i></li>
+      <li><i><a class="home_work" href="cats_gallery.html">pz_3.3</a></i></li>
+      <li><i><a class="home_work" href="progress_bar.html">pz_4.1</a></i></li>
+      <li><i><a class="home_work" href="heart.html">pz_4.2</a></i></li>
+      <li><i><a class="home_work" href="my_site.html">pz_4.3</a></i></li>
+      <li><i><a class="home_work" href="table.html">pz_5.1</a></i></li>
+      <li><i><a class="home_work" href="menu_content.html">pz_5.2</a></i></li>
+      <li><i><a class="home_work" href="shakespeare.html">pz_5.3</a></i></li>
+      <li><i><a class="home_work" href="modal_window.html">pz_7.1</a></i></li>
+      <li><i><a class="home_work" href="tabs.html">pz_7.2</a></i></li>
+      <li><i><a class="home_work" href="website.html">pz_7.3</a></i></li>
+      <li>class work</li>
+      <li><i><a class="home_work" href="network.html">Network</a></i></li>
+      <li><i><a class="home_work" href="inky_deals.html">Inky_Deals</a></i></li>
+      <li><i><a class="home_work" href="frame.html">Frame</a></i></li>
     </ul>
   </nav>
   <div>
